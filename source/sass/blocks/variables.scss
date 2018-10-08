@@ -1,31 +1,20 @@
 // colors
-$base-color: #ffffff;
+$white: #ffffff;
 
-$block-color: darken($base-color, 5%);
-$weight-outline-color: darken($base-color, 7%);
-$menu-color: darken($base-color, 10%);
-$line-color: darken($base-color, 15%);
-$border-color: darken($base-color, 20%);
-$footer-color: darken($base-color, 60%);
-$form-color: darken($base-color, 65%);
+$light-grey: #f2f2f2;
+$gray: #dddfe0;
+$super-gray: #e9ebec;
+$dark-gray: #b5b9be;
 
-$base-color-down: rgba(255, 255, 255, 0.3);
-$radio-border-hover: #bcbcbc;
-$input-error: #ff8282;
-$shadow-color: rgba(0, 0, 0, 0.15);
-$shadow-color-hover: rgba(0, 0, 0, 0.25);
+$dark-blue: #283645;
+$light-blue: #485461;
 
-$toggle-color: #222222;
-$text-color: #111111;
-$text-color-light: lighten($text-color, 20%);
-$grey-button: #444444;
-$grey-button-down: #b9b9b9;
-$footers-icon-color: #676767;
-
-$decor-color: #64a83b;
-$decor-hover-color: #5eaa2f;
+$black: #000000;
+$pink: #d22856;
+$green: #2aab6d;
 
 // width viewports
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 

@@ -1,0 +1,24 @@
+.site-navigation {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid $black;
+}
+
+.site-navigation__item {
+  padding: 15px 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid $black;
+  border-top: 1px solid $light-blue;
+
+  a {
+    color: $white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+}

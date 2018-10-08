@@ -1,0 +1,27 @@
+.filters {
+  padding-bottom: 30px;
+  background-color: $light-grey;
+}
+
+.filters__your-picture {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.filters__list {
+  padding: 30px 40px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid $gray;
+}
+
+.filters-form__range {
+  display: none;
+}
+
+.filters-form__radio:checked + .filters-form__range {
+  display: block;
+}
+
+.filters__button {
+  background-color: transparent;
+}

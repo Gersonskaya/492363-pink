@@ -1,0 +1,29 @@
+.page-main {
+  background: $dark-blue url("./../img/bg-back-mobile@1x.jpg") no-repeat 0 -65px;
+}
+
+.page-main__caption {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  color: $white;
+}
+
+.page-main__caption--form {
+  padding-bottom: 50px;
+}
+
+.page-main__form {
+  background-color: $white;
+}
+
+.page-main__text {
+  padding: 50px 20px;
+  margin: 0;
+  text-align: center;
+}
