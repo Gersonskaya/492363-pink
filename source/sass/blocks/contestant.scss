@@ -1,0 +1,28 @@
+.contestant {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0 20px;
+  border: none;
+}
+
+.contestant__checkbox,
+.contestant__radio {
+  padding: 35px 20px;
+  background-color: $light-grey;
+}
+
+.contestant__title {
+  margin: 0;
+  padding: 0 15px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.contestant__title--comment {
+  padding-top: 18px;
+  padding-bottom: 17px;
+}

@@ -1,0 +1,19 @@
+.reviews {
+  padding: 0 20px;
+  background-color: $white;
+}
+
+.reviews__item {
+  display: none;
+  text-align: center;
+}
+
+.reviews__item--active {
+  display: block;
+}
+
+.reviews__name {
+  font-size: 18px;
+  font-weight: 600;
+  color: $black;
+}

@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="logo logo--header" src="http://placehold.it/150x100" alt="Логотип в шапке">
+      <img class="logo logo--header" src="./img/logo-pink-white-mobile.svg" width="74" height="22" alt="Логотип в шапке">
     </a>
     <nav class="page-header__main-nav main-nav">
       <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--open" type="button">
         <span></span>
       </button>
       <div class="main-nav__hidden">
-        <ul class="main-nav__list site-navigation">
+        <ul class="main-nav__list list-none site-navigation">
           <li class="site-navigation__item">
             <a>Главная</a>
           </li>
@@ -33,25 +34,25 @@
   </header>
 
   <main class="page-main">
-    <section class="promo">
-      <h2 class="promo__title visually-hidden">Промо</h2>
-      <img src="http://placehold.it/150x100" alt="Изображение телефона в руке" class="promo__image">
-      <a href="https://www.apple.com/ru/itunes/" class="promo__button button">Скачать приложение</a>
-      <div class="download__icons icons">
-        <ul class="icons__list">
+    <section class="downloads">
+      <h2 class="visually-hidden">Промо</h2>
+      <img src="./img/iphone-hand-mobile@1x.png" alt="Изображение телефона в руке" width="256" height="286" class="downloads__image">
+      <a href="https://www.apple.com/ru/itunes/" class="button button--downloads">Скачать приложение</a>
+      <div class="icons">
+        <ul class="icons__list list-none">
           <li class="icons__item">
             <a href="https://www.apple.com/ru/itunes/" class="icons__linc">
-              <img src="http://placehold.it/150x100" alt="Логотип Apple" class="icons__image">
+              <img src="./img/logo-apple.svg" alt="Логотип Apple" class="icons__image" width="47" height="56">
             </a>
           </li>
           <li class="icons__item">
             <a href="https://play.google.com/store?hl=ru" class="icons__linc">
-              <img src="http://placehold.it/150x100" alt="Логотип Android" class="icons__image">
+              <img src="./img/logo-android.svg" alt="Логотип Android" class="icons__image" width="43" height="47">
             </a>
           </li>
           <li class="icons__item">
             <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="icons__linc">
-              <img src="http://placehold.it/150x100" alt="Логотип Windows" class="icons__image">
+              <img src="./img/logo-microsoft.svg" alt="Логотип Windows" class="icons__image" width="44" height="41">
             </a>
           </li>
         </ul>
@@ -59,21 +60,14 @@
       </div>
     </section>
 
-    <section class="promo">
-      <h2 class="promo__title visually-hidden">Рекламные фразы</h2>
-      <div class="promo__slogan">
-        <p class="promo__item">
-          Устали от серости мегаполиса?
-        </p>
-        <p class="promo__item">
-          Нам есть, что вам предложить!
-        </p>
-      </div>
-    </section>
+    <div class="promo">
+      <p class="promo__item">Устали от серости мегаполиса?</p>
+      <p class="promo__item">Нам есть, что вам предложить!</p>
+    </div>
 
     <section class="features">
-      <h2 class="features__title visually-hidden">Характеристики приложения</h2>
-      <ul class="features__list">
+      <h2 class="visually-hidden">Характеристики приложения</h2>
+      <ul class="features__list list-none">
         <li class="features__item">
           <h3 class="features__topic">Поднимает настроение</h3>
           <p class="features__description">
@@ -89,16 +83,16 @@
         <li class="features__item">
           <h3 class="features__topic">Заводит новых друзей</h3>
           <p class="features__description">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых друзей
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </li>
       </ul>
-      <img src="http://placehold.it/150x100" alt="Пример работы приложения" class="features__image">
+      <img src="./img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="157" height="320" class="features__image">
     </section>
 
     <section class="reviews">
-      <h2 class="reviews__title visually-hidden">Отзывы пользователей</h2>
-      <ul class="reviews__list">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
+      <ul class="reviews__list list-none">
         <li class="reviews__item reviews__item--active">
           <h3 class="reviews__name">Николай Петров</h3>
           <p class="reviews__description">
@@ -135,7 +129,7 @@
     </section>
 
     <section class="rate">
-      <h2 class="rate__title visually-hidden">Тарифы</h2>
+      <h2 class="visually-hidden">Тарифы</h2>
       <table class="rate__carousel carousel">
         <tr class="carousel__header">
           <td class="carousel__title">
@@ -208,23 +202,17 @@
     </section>
 
     <section class="map">
-      <h2 class="map__title visually-hidden">Карта и контакты</h2>
+      <h2 class="visually-hidden">Карта и контакты</h2>
       <div class="map__address address">
         <p class="address__title">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="address__text">
-          Звоните:
-          <span class="address__description">+7 (812) 555-66-66</span>
-        </p>
-        <p class="address__text">
-          Пишите:
-          <span class="address__description">mail@htmlacademy.ru</span>
-        </p>
-        <p class="address__text">
-          Приезжайте в гости:
-          <span class="address__description">ул. Большая Конюшенная, 19/8</span>
-        </p>
+        <p class="address__text">Звоните:</p>
+        <span class="address__description">+7 (812) 555-66-66</span>
+        <p class="address__text">Пишите:</p>
+        <span class="address__description">mail@htmlacademy.ru</span>
+        <p class="address__text">Приезжайте в гости:</p>
+        <span class="address__description">ул. Большая Конюшенная, 19/8</span>
       </div>
-      <div class="map__marker"></div>
+      <div class="map__marker">x</div>
     </section>
   </main>
   </body>

@@ -1,0 +1,29 @@
+.carousel__header {
+  text-align: center;
+  color: $white;
+  background-color: $dark-blue;
+}
+
+.carousel__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.carousel__price {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.carousel__line {
+  background-color: $white;
+}
+
+.carousel__cell {
+  vertical-align: middle;
+}
+
+.carousel__service {
+  text-align: center;
+  text-transform: uppercase;
+}

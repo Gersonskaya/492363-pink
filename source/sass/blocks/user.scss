@@ -1,0 +1,49 @@
+.user {
+  margin: 0 20px;
+  margin-bottom: 20px;
+  background-color: $light-grey;
+}
+
+.user__photo--winner {
+  margin-left: -20px;
+}
+
+.user__info {
+  padding: 15px;
+  padding-top: 5px;
+  line-height: 24px;
+}
+
+.user__name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user__data {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.user__comment {
+  margin: 0;
+}
+
+.user__likes {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.user__heart {
+  margin-right: 25px;
+}
+
+.user__winner {
+  display: none;
+}
