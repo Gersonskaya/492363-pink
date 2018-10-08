@@ -1,0 +1,34 @@
+// colors
+$base-color: #ffffff;
+
+$block-color: darken($base-color, 5%);
+$weight-outline-color: darken($base-color, 7%);
+$menu-color: darken($base-color, 10%);
+$line-color: darken($base-color, 15%);
+$border-color: darken($base-color, 20%);
+$footer-color: darken($base-color, 60%);
+$form-color: darken($base-color, 65%);
+
+$base-color-down: rgba(255, 255, 255, 0.3);
+$radio-border-hover: #bcbcbc;
+$input-error: #ff8282;
+$shadow-color: rgba(0, 0, 0, 0.15);
+$shadow-color-hover: rgba(0, 0, 0, 0.25);
+
+$toggle-color: #222222;
+$text-color: #111111;
+$text-color-light: lighten($text-color, 20%);
+$grey-button: #444444;
+$grey-button-down: #b9b9b9;
+$footers-icon-color: #676767;
+
+$decor-color: #64a83b;
+$decor-hover-color: #5eaa2f;
+
+// width viewports
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
