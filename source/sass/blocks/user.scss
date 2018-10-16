@@ -45,3 +45,26 @@
 .user__winner {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .user {
+    width: 100%;
+  }
+
+  .user__info {
+    width: 100%;
+    padding: 30px;
+  }
+
+// Временное свойство для поддержания вида сетки:
+
+  .user__photo {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user__photo--winner {
+    margin: 0;
+  }
+}

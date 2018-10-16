@@ -1,5 +1,24 @@
+.contestant-contacts > .contestant__title {
+  display: none;
+}
+
 .contestant-contacts__text {
   padding-left: 20px;
   text-transform: uppercase;
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .contestant-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contestant-contacts__text {
+    padding-left: 15px;
+  }
+
+  .contestant-contacts > .contestant__title {
+    display: block;
+  }
 }

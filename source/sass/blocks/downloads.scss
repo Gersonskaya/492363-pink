@@ -1,8 +1,43 @@
 .downloads {
   padding-top: 412px;
-  background: url("./../img/iphone-hand-mobile@1x.png") no-repeat 0 111px;
+  background: url("./../img/iphone-hand-mobile@1x.png") no-repeat 0 108px;
 }
 
 .downloads__text {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .downloads {
+    padding: 100px 20px;
+    background: url("./../img/iphone-hand-tablet@1x.png") no-repeat 0 82px;
+  }
+
+  .downloads__text {
+    display: block;
+    max-width: 300px;
+    margin: 0;
+    padding: 0 50px;
+    padding-bottom: 25px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 100;
+    text-align: center;
+    color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .downloads {
+    padding: 110px 10px;
+    background: url("./../img/iphone-hand-desktop@1x.png") no-repeat 25px 95px;
+  }
+
+  .downloads__text {
+    padding: 0 30px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
 }

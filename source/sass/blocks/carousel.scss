@@ -1,29 +1,99 @@
+.carousel {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel__base {
+  .carousel__header {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .carousel__service {
+    border-left: 2px solid $double-grey;
+  }
+}
+
+.carousel__unlimited {
+  .carousel__header {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.carousel__base,
+.carousel__standart {
+  border-right: 2px solid $double-grey;
+}
+
+.carousel__unlimited {
+  .carousel__service {
+    border-right: 2px solid $double-grey;
+  }
+}
+
 .carousel__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 280px;
+  padding: 20px 0;
   text-align: center;
+  text-transform: uppercase;
   color: $white;
   background-color: $dark-blue;
 }
 
 .carousel__subtitle {
+  margin: 0;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .carousel__price {
+  margin: 0;
   font-size: 24px;
   font-weight: 100;
 }
 
-.carousel__line {
-  background-color: $white;
-}
-
-.carousel__cell {
-  vertical-align: middle;
-}
-
 .carousel__service {
+  display: flex;
+  padding: 15px 20px;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: middle;
+  background-color: $white;
+  border-bottom: 2px solid $double-grey;
+}
+
+.carousel__name {
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .carousel {
+    position: static;
+    align-items: flex-end;
+  }
+
+  .carousel__header {
+    min-width: 155px;
+    padding: 10px 0;
+  }
+
+  .carousel__subtitle {
+    font-style: 16px;
+  }
+
+  .carousel__price {
+    font-size: 18px;
+  }
+
+  .carousel__name {
+    display: none;
+  }
+
+  .carousel__service {
+    justify-content: center;
+    padding: 10px 0;
+  }
 }

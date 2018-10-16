@@ -2,3 +2,14 @@
   position: relative;
   background-color: $dark-blue;
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 110px;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.32);
+  }
+}

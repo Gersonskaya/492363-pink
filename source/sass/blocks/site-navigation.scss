@@ -17,8 +17,22 @@
 
   a {
     color: $white;
-    letter-spacing: 1px;
     text-decoration: none;
     vertical-align: middle;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-navigation {
+    display: flex;
+    border: none;
+  }
+
+  .site-navigation__item {
+    justify-content: space-between;
+    padding-left: 80px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: none;
   }
 }
