@@ -15,14 +15,12 @@
 }
 
 .carousel__unlimited {
-  .carousel__service {
-    border-right: 2px solid $double-grey;
-  }
-}
-
-.carousel__unlimited {
   .carousel__header {
     border-radius: 0 5px 5px 0;
+  }
+
+  .carousel__service {
+    border-right: 2px solid $double-grey;
   }
 }
 
