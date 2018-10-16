@@ -1,3 +1,8 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social__button {
   width: 20px;
   height: 20px;
@@ -16,4 +21,31 @@
 
 .social__image--youtube {
   padding: 0 0 3px 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    display: flex;
+  }
+
+  .social__button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social__image {
+    padding: 0;
+  }
+
+  .social__image--twitter {
+    transform: translate(3px, -1px);
+  }
+
+  .social__image--facebook {
+    transform: translate(6px, 1px);
+  }
+
+  .social__image--youtube {
+    transform: translate(5px, -1px);
+  }
 }

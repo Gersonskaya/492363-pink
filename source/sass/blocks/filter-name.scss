@@ -1,0 +1,19 @@
+.filter-name {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-name {
+    display: block;
+    border-left: 2px solid $double-grey;
+    border-top: 2px solid $double-grey;
+  }
+
+  .filter-name__item {
+    min-width: 155px;
+    padding: 10px 15px;
+    vertical-align: middle;
+    background-color: $white;
+    border-bottom: 2px solid $double-grey;
+  }
+}

@@ -34,3 +34,29 @@
 .form__required--color {
   color: $pink;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .form__input {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .form__textarea {
+    min-width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+}

@@ -1,14 +1,135 @@
 .features {
-  padding: 0 20px;
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+  padding-bottom: 0;
   background-color: $light-grey;
 }
 
+.features__list {
+  padding-bottom: 280px;
+}
+
 .features__item {
+  padding-bottom: 20px;
+  margin: 0;
   text-align: center;
 }
 
 .features__topic {
+  padding-bottom: 10px;
+  margin: 0;
   font-size: 18px;
   font-weight: 600;
   color: $black;
+}
+
+.features__description {
+  margin: 0;
+}
+
+.features__images {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -80px;
+  z-index: 1;
+}
+
+.features__image-1,
+.features__image-2 {
+  display: none;
+}
+
+.features__image-3 {
+  width: 157px;
+  height: 320px;
+  background: url("./../img/iphone-screen-mobile@1x.png") no-repeat 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .features__list {
+    max-width: 320px;
+    align-self: center;
+    padding: 0;
+  }
+
+  .features__item {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .features__images {
+    position: static;
+    margin: 0;
+  }
+
+  .features__image-3 {
+    min-width: 268px;
+    min-height: 481px;
+    background: url("./../img/iphone-screen-3-tablet@1x.png") no-repeat 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    flex-direction: column-reverse;
+    padding: 0 10px;
+  }
+
+  .features__images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__image-1 {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: url("./../img/iphone-screen-1-desktop@1x.png") no-repeat 0 0;
+  }
+
+  .features__image-2 {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: url("./../img/iphone-screen-2-desktop@1x.png") no-repeat 0 0;
+  }
+
+  .features__image-3 {
+    min-width: 300px;
+    min-height: 300px;
+    background: url("./../img/iphone-screen-3-desktop@1x.png") no-repeat 0 0;
+  }
+
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: inherit;
+  }
+
+  .features__item {
+    max-width: 300px;
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  .features__item:not(:first-child) {
+    margin-left: 25px;
+  }
+
+  .features__topic {
+    padding: 0 40px;
+    font-size: 24px;
+  }
+
+  .features__description {
+    font-size: 18px;
+  }
 }

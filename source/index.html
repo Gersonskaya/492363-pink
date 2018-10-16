@@ -2,218 +2,295 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Пинк: Главная</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="logo logo--header" src="./img/logo-pink-white-mobile.svg" width="74" height="22" alt="Логотип в шапке">
-    </a>
-    <nav class="page-header__main-nav main-nav">
-      <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--open" type="button">
-        <span></span>
-      </button>
-      <div class="main-nav__hidden">
-        <ul class="main-nav__list list-none site-navigation">
-          <li class="site-navigation__item">
-            <a>Главная</a>
+  <div class="container">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="logo logo--header" src="./img/logo-pink-white-mobile.svg" width="74" height="22" alt="Логотип в шапке">
+      </a>
+      <nav class="page-header__main-nav main-nav">
+        <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--open" type="button">
+          <span></span>
+        </button>
+        <div class="main-nav__hidden">
+          <ul class="main-nav__list list-none site-navigation">
+            <li class="site-navigation__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="downloads">
+        <h2 class="visually-hidden">Промо</h2>
+        <h3 class="downloads__text">Взгляните на жизнь иначе!</h3>
+        <a href="https://www.apple.com/ru/itunes/" class="button button--downloads">Скачать приложение</a>
+        <div class="icons">
+          <ul class="icons__list list-none">
+            <li class="icons__item">
+              <a href="https://www.apple.com/ru/itunes/" class="icons__linc">
+                <img src="./img/logo-apple.svg" alt="Логотип Apple" class="icons__image" width="46" height="56">
+              </a>
+            </li>
+            <li class="icons__item">
+              <a href="https://play.google.com/store?hl=ru" class="icons__linc">
+                <img src="./img/logo-android.svg" alt="Логотип Android" class="icons__image" width="42" height="47">
+              </a>
+            </li>
+            <li class="icons__item">
+              <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="icons__linc">
+                <img src="./img/logo-microsoft.svg" alt="Логотип Windows" class="icons__image" width="43" height="41">
+              </a>
+            </li>
+          </ul>
+          <p class="icons__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <div class="promo">
+        <p class="promo__item">Устали от серости мегаполиса?</p>
+        <p class="promo__item">Нам есть, что вам
+          <br class="promo__item--enter">
+          предложить!</p>
+      </div>
+
+      <section class="features">
+        <h2 class="visually-hidden">Характеристики приложения</h2>
+        <ul class="features__list list-none">
+          <li class="features__item">
+            <h3 class="features__topic">Поднимает настроение</h3>
+            <p class="features__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
           </li>
-          <li class="site-navigation__item">
-            <a href="photo.html">Фотографии</a>
+          <li class="features__item">
+            <h3 class="features__topic">Меняет мир вокруг</h3>
+            <p class="features__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект.
+            </p>
           </li>
-          <li class="site-navigation__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="features__item">
+            <h3 class="features__topic">Заводит новых друзей</h3>
+            <p class="features__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
           </li>
         </ul>
-      </div>
-    </nav>
-  </header>
+        <div class="features__images">
+          <div class="features__image-1"></div>
+          <div class="features__image-2"></div>
+          <div class="features__image-3"></div>
+        </div>
+      </section>
 
-  <main class="page-main">
-    <section class="downloads">
-      <h2 class="visually-hidden">Промо</h2>
-      <img src="./img/iphone-hand-mobile@1x.png" alt="Изображение телефона в руке" width="256" height="286" class="downloads__image">
-      <a href="https://www.apple.com/ru/itunes/" class="button button--downloads">Скачать приложение</a>
-      <div class="icons">
-        <ul class="icons__list list-none">
-          <li class="icons__item">
-            <a href="https://www.apple.com/ru/itunes/" class="icons__linc">
-              <img src="./img/logo-apple.svg" alt="Логотип Apple" class="icons__image" width="47" height="56">
+      <section class="effect">
+        <h2 class="visually-hidden">Эффект</h2>
+        <img src="./img/icon-timer.svg" alt="Изображение таймера" width="298" height="345" class="effect__image">
+        <div class="effect__block">
+          <h3 class="effect__title">Эффект<br class="effect__enter-tablet"> на 24 часа!</h3>
+          <p class="effect__description">
+            Британские ученые провели исследования<br class="effect__enter-tablet">
+            и доказали,<br class="effect__enter-desktop">
+            что положительные эффект<br class="effect__enter-tablet">
+            от использования приложения длится<br class="effect__enter-tablet">
+            целые сутки!
+          </p>
+          <a href="#" class="effect__linc">Узнать больше об исследовании</a>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <ul class="reviews__list list-none">
+          <li class="reviews__item reviews__item--active">
+            <h3 class="reviews__title">
+              Николай Петров
+              <span class="reviews__subtitle">25 лет, водитель трамвая</span>
+            </h3>
+            <p class="reviews__description">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </li>
+          <li class="reviews__item">
+            <h3 class="reviews__name">Николай Петров</h3>
+            <p class="reviews__description">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </li>
+          <li class="reviews__item">
+            <h3 class="reviews__name">Николай Петров</h3>
+            <p class="reviews__description">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </li>
+        </ul>
+        <div class="reviews__slider slider">
+          <label class="slider__label" for="reviews__one">
+            <input class="slider__radio" type="radio" id="reviews__one" name="control" checked>
+          </label>
+          <label class="slider__label" for="reviews__two">
+            <input class="slider__radio" type="radio" id="reviews__two" name="control">
+          </label>
+          <label class="slider__label" for="reviews__thee">
+            <input class="slider__radio" type="radio" id="reviews__thee" name="control">
+          </label>
+        </div>
+      </section>
+
+      <section class="rate">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="rate__carousel carousel">
+          <div class="carousel__filters filter-name">
+            <div class="filter-name__item">Розовый фильтр</div>
+            <div class="filter-name__item">Смайлики</div>
+            <div class="filter-name__item">Комментарии</div>
+          </div>
+          <div class="carousel__base">
+            <div class="carousel__header">
+              <h3 class="carousel__subtitle">База</h3>
+              <p class="carousel__price">1,99 USD</p>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Розовый фильтр</div>
+              <div class="carousel__yes">Yes</div>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Смайлики</div>
+              <div class="carousel__no">No</div>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Комментарии</div>
+              <div class="carousel__no">No</div>
+            </div>
+          </div>
+          <div class="carousel__standart">
+            <div class="carousel__header carousel__header--hit">
+              <h3 class="carousel__subtitle">Стандарт</h3>
+              <p class="carousel__price">3,99 USD</p>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Розовый фильтр</div>
+              <div class="carousel__yes">Yes</div>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Смайлики</div>
+              <div class="carousel__yes">Yes</div>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Комментарии</div>
+              <div class="carousel__no">No</div>
+            </div>
+          </div>
+          <div class="carousel__unlimited">
+            <div class="carousel__header">
+              <h3 class="carousel__subtitle">Анлим</h3>
+              <p class="carousel__price">9,99 USD</p>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Розовый фильтр</div>
+              <div class="carousel__yes">Yes</div>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Смайлики</div>
+              <div class="carousel__yes">Yes</div>
+            </div>
+            <div class="carousel__service">
+              <div class="carousel__name">Комментарии</div>
+              <div class="carousel__yes">Yes</div>
+            </div>
+          </div>
+        </div>
+        <div class="rate__slider slider">
+          <label class="slider__label" for="rate__one">
+            <input class="slider__radio" type="radio" id="rate__one" name="toggle">
+          </label>
+          <label class="slider__label" for="rate__two">
+            <input class="slider__radio" type="radio" id="rate__two" name="toggle" checked>
+          </label>
+          <label class="slider__label" for="rate__thee">
+            <input class="slider__radio" type="radio" id="rate__thee" name="toggle">
+          </label>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта и контакты</h2>
+        <div class="map__address address">
+          <p class="address__title">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="address__list list-none">
+            <li class="address__item address__item--1">
+              <p class="address__text">Звоните:</p>
+              <span class="address__description">+7 (812) 555-66-66</span>
+            </li>
+            <li class="address__item address__item--3">
+              <p class="address__text">Пишите:</p>
+              <span class="address__description">mail@htmlacademy.ru</span>
+            </li>
+            <li class="address__item address__item--2">
+              <p class="address__text">Приезжайте в гости:</p>
+              <span class="address__description">ул. Большая Конюшенная, 19/8</span>
+            </li>
+          </ul>
+        </div>
+        <div class="map__marker">x</div>
+      </section>
+    </main>
+
+    <footer class="page-footer page-footer--index">
+      <a class="page-footer__logo">
+        <img class="logo logo--footer" src="./img/logo-pink-blue-mobile.svg" alt="Логотип в подвале" width="146" height="40">
+      </a>
+
+      <section class="page-footer__social social">
+        <h2 class="social__title visually-hidden">Социальные кнопки</h2>
+        <ul class="social__list list-none">
+          <li class="social__button">
+            <a href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <img src="./img/icon-twitter.svg" alt="Твиттер" width="17" height="14" class="social__image social__image--twitter">
             </a>
           </li>
-          <li class="icons__item">
-            <a href="https://play.google.com/store?hl=ru" class="icons__linc">
-              <img src="./img/logo-android.svg" alt="Логотип Android" class="icons__image" width="43" height="47">
+          <li class="social__button">
+            <a href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <img src="./img/icon-facebook.svg" alt="Фейсбук" width="8" height="18" class="social__image social__image--facebook">
             </a>
           </li>
-          <li class="icons__item">
-            <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="icons__linc">
-              <img src="./img/logo-microsoft.svg" alt="Логотип Windows" class="icons__image" width="44" height="41">
+          <li class="social__button">
+            <a href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <img src="./img/icon-youtube.svg" alt="Ютуб" width="14" height="13" class="social__image social__image--youtube">
             </a>
           </li>
         </ul>
-        <p class="icons__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
+      </section>
 
-    <div class="promo">
-      <p class="promo__item">Устали от серости мегаполиса?</p>
-      <p class="promo__item">Нам есть, что вам предложить!</p>
-    </div>
-
-    <section class="features">
-      <h2 class="visually-hidden">Характеристики приложения</h2>
-      <ul class="features__list list-none">
-        <li class="features__item">
-          <h3 class="features__topic">Поднимает настроение</h3>
-          <p class="features__description">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__topic">Меняет мир вокруг</h3>
-          <p class="features__description">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект.
-          </p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__topic">Заводит новых друзей</h3>
-          <p class="features__description">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </li>
-      </ul>
-      <img src="./img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="157" height="320" class="features__image">
-    </section>
-
-    <section class="reviews">
-      <h2 class="visually-hidden">Отзывы пользователей</h2>
-      <ul class="reviews__list list-none">
-        <li class="reviews__item reviews__item--active">
-          <h3 class="reviews__name">Николай Петров</h3>
-          <p class="reviews__description">
-            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-          </p>
-        </li>
-        <li class="reviews__item">
-          <h3 class="reviews__name">Николай Петров</h3>
-          <p class="reviews__description">
-            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-          </p>
-        </li>
-        <li class="reviews__item">
-          <h3 class="reviews__name">Николай Петров</h3>
-          <p class="reviews__description">
-            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-          </p>
-        </li>
-      </ul>
-      <div class="reviews__slider slider">
-        <label class="slider__label" for="reviews__one">
-          <input class="slider__radio" type="radio" id="reviews__one" name="control" checked>
-        </label>
-        <label class="slider__label" for="reviews__two">
-          <input class="slider__radio" type="radio" id="reviews__two" name="control">
-        </label>
-        <label class="slider__label" for="reviews__thee">
-          <input class="slider__radio" type="radio" id="reviews__thee" name="control">
-        </label>
-      </div>
-    </section>
-
-    <section class="rate">
-      <h2 class="visually-hidden">Тарифы</h2>
-      <table class="rate__carousel carousel">
-        <tr class="carousel__header">
-          <td class="carousel__title">
-            <h3 class="carousel__subtitle">База</h3>
-            <p class="carousel__price">1,99 USD</p>
-          </td>
-          <td class="carousel__title carousel__title--hit">
-            <h3 class="carousel__subtitle">Стандарт</h3>
-            <p class="carousel__price">3,99 USD</p>
-          </td>
-          <td class="carousel__title">
-            <h3 class="carousel__subtitle">Анлим</h3>
-            <p class="carousel__price">9,99 USD</p>
-          </td>
-        </tr>
-        <tr class="carousel__line">
-          <td class="carousel__cell">
-            <div class="carousel__service">Розовый фильтр</div>
-            <div class="carousel__yes">Yes</div>
-          </td>
-          <td class="carousel__cell">
-            <div class="carousel__service">Розовый фильтр</div>
-            <div class="carousel__yes">Yes</div>
-          </td>
-          <td class="carousel__cell">
-            <div class="carousel__service">Розовый фильтр</div>
-            <div class="carousel__yes">Yes</div>
-          </td>
-        </tr>
-        <tr class="carousel__line">
-          <td class="carousel__cell">
-            <div class="carousel__service">Смайлики</div>
-            <div class="carousel__no">No</div>
-          </td>
-          <td class="carousel__cell">
-            <div class="carousel__service">Смайлики</div>
-            <div class="carousel__yes">Yes</div>
-          </td>
-          <td class="carousel__cell">
-            <div class="carousel__service">Смайлики</div>
-            <div class="carousel__yes">Yes</div>
-          </td>
-        </tr>
-        <tr class="carousel__line">
-          <td class="carousel__cell">
-            <div class="carousel__service">Комментарии</div>
-            <div class="carousel__no">No</div>
-          </td>
-          <td class="carousel__cell">
-            <div class="carousel__service">Комментарии</div>
-            <div class="carousel__no">No</div>
-          </td>
-          <td class="carousel__cell">
-            <div class="carousel__service">Комментарии</div>
-            <div class="carousel__yes">Yes</div>
-          </td>
-        </tr>
-      </table>
-      <div class="rate__slider slider">
-        <label class="slider__label" for="rate__one">
-          <input class="slider__radio" type="radio" id="rate__one" name="toggle">
-        </label>
-        <label class="slider__label" for="rate__two">
-          <input class="slider__radio" type="radio" id="rate__two" name="toggle" checked>
-        </label>
-        <label class="slider__label" for="rate__thee">
-          <input class="slider__radio" type="radio" id="rate__thee" name="toggle">
-        </label>
-      </div>
-    </section>
-
-    <section class="map">
-      <h2 class="visually-hidden">Карта и контакты</h2>
-      <div class="map__address address">
-        <p class="address__title">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="address__text">Звоните:</p>
-        <span class="address__description">+7 (812) 555-66-66</span>
-        <p class="address__text">Пишите:</p>
-        <span class="address__description">mail@htmlacademy.ru</span>
-        <p class="address__text">Приезжайте в гости:</p>
-        <span class="address__description">ул. Большая Конюшенная, 19/8</span>
-      </div>
-      <div class="map__marker">x</div>
-    </section>
-  </main>
+      <section class="page-footer__copyright copyright">
+        <h2 class="copyright__title visually-hidden">Логотип Академии</h2>
+        <p class="copyright__title">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="./img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="26" height="34" class="copyright__image">
+        </a>
+      </section>
+    </footer>
+  </div>
   </body>
 </html>

@@ -2,3 +2,10 @@
   min-height: 645px;
   background-image: url("./../../img/bg-map-mobile@1x.png");
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 780px;
+    background-image: url("./../../img/bg-map-tablet@1x.jpg");
+  }
+}

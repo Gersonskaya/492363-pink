@@ -1,4 +1,45 @@
 .photo {
-  padding: 0 15px;
+  padding: 0 20px;
   background-color: $white;
+}
+
+.photo__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photo__item {
+    display: flex;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .photo__item--best {
+    min-width: 620px;
+  }
+
+  .photo__item--best > .user,
+  .photo__item--best > .user > .user__info {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    padding: 0 10px;
+  }
+
+  .photo__item {
+    margin-bottom: 50px;
+  }
+
+  .photo__item--best {
+    min-width: 940px;
+  }
 }

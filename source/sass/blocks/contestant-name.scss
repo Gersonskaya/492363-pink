@@ -3,3 +3,15 @@
   text-transform: uppercase;
   color: $pink;
 }
+
+@media (min-width: $tablet-width) {
+  .contestant-name {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .contestant-name__text {
+    padding: 0;
+    margin-right: 15px;
+  }
+}

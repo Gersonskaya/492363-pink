@@ -1,0 +1,23 @@
+.filters-form__range {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  display: none;
+}
+
+.filters-form__radio:checked + .filters-form__range {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .filters-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 275px;
+  }
+
+  .filters-form__range {
+    position: static;
+    display: block;
+  }
+}

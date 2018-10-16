@@ -1,10 +1,45 @@
 .promo {
-  backgraund-color: $white;
+  padding: 30px;
+  padding-bottom: 0;
+  margin: 0 auto;
+  background-color: $white;
 }
 
 .promo__item {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  margin: 0;
   font-size: 24px;
   font-weight: 100;
   text-align: center;
+}
+
+.promo__item--enter {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 50px 20px;
+  }
+
+  .promo__item {
+    padding: 0;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .promo__item--enter {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding: 75px 0;
+  }
+
+  .promo__item {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }

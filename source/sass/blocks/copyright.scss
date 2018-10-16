@@ -1,7 +1,14 @@
 .copyright {
+  display: flex;
+  align-items: center;
   line-height: 18px;
 }
 
 .copyright__image {
   margin-left: 10px;
+}
+
+.copyright__title {
+  margin: 0;
+  padding-bottom: 5px;
 }
