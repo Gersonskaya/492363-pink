@@ -2,6 +2,53 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  background: transparent;
+  border: none;
+}
+
+.main-nav__toggle > span {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background: $white;
+}
+
+.main-nav__toggle > span::after,
+.main-nav__toggle > span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: $white;
+}
+
+.main-nav__toggle--closed > span::before {
+  top: 10px;
+}
+
+.main-nav__toggle--closed > span::after {
+  top: -10px;
+}
+
+.main-nav__toggle--opened > span {
+  width: 30px;
+  background-color: transparent;
+}
+
+.main-nav__toggle--opened > span::after,
+.main-nav__toggle--opened > span::before {
+  top: 0;
+  width: 30px;
+}
+
+.main-nav__toggle--opened > span::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.main-nav__toggle--opened > span::after {
+  transform: rotate3d(0, 0, 1, -45deg);
 }
 
 @media (min-width: $desktop-width) {

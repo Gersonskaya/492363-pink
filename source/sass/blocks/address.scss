@@ -1,7 +1,7 @@
 .address {
   padding: 35px 20px;
   text-align: center;
-  background-color: $white;
+  background: $white;
 }
 
 .address__title {
@@ -42,8 +42,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .address {
+    padding: 0;
+  }
+
   .address__title {
-    padding: 0 200px;
+    padding: 70px 200px;
+    padding-bottom: 40px;
     font-size: 50px;
     line-height: 60px;
   }

@@ -26,7 +26,6 @@
   padding-top: 18px;
   padding-bottom: 17px;
 }
-
 @media (min-width: $tablet-width) {
   .contestant {
     padding: 45px 60px;
@@ -72,6 +71,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contestant {
+    position: relative;
+  }
+
   .contestant__names,
   .contestant__radio {
     width: 435px;
@@ -81,7 +84,7 @@
   .contestant__checkbox,
   .contestant__comments,
   .contestant__send {
-    min-width: 940px;
+    width: 100%;
   }
 
   .contestant__names {
@@ -90,5 +93,13 @@
 
   .contestant__contacts {
     flex-direction: row;
+  }
+
+  .contestant__title {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    padding: 0 25px;
+    background-color: white;
   }
 }

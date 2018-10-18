@@ -4,8 +4,8 @@
   justify-content: center;
   min-height: 470px;
   max-width: 100%;
+  background-color: transparent;
   overflow: hidden;
-  background-color: $light-grey;
 }
 
 .rate__carousel {
@@ -14,13 +14,12 @@
 
 .rate__slider {
   align-self: flex-end;
-  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .rate {
     min-height: auto;
-    padding: 80px 20px;
+    padding: 110px 20px;
     padding-bottom: 70px;
   }
 
