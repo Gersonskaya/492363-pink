@@ -1,6 +1,6 @@
 .filters {
   padding-bottom: 30px;
-  background-color: $light-grey;
+  background-color: $light-gray;
 }
 
 .filters__your-picture {
@@ -11,9 +11,84 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 30px 40px;
-  margin-bottom: 35px;
-  border-bottom: 1px solid $gray;
+  align-items: center;
+  padding-bottom: 60px;
+  margin-bottom: 38px;
+  border-bottom: 1px solid $super-light-blue;
+}
+
+.filters__item {
+  position: relative;
+  padding: 0 15px;
+}
+
+.filters__radio {
+  display: block;
+  cursor: pointer;
+
+  &--crop {
+    width: 46px;
+    height: 46px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.filters__range {
+  position: absolute;
+  top: 75px;
+  left: -10%;
+  display: none;
+  width: 240px;
+  height: 2px;
+  background-color: $dark-blue;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $light-gray;
+    border: 2px solid $pink;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  &--crop::before {
+    top: -6px;
+    left: 190px;
+  }
+
+  &--fill::before {
+    top: -6px;
+    left: 30px;
+  }
+
+  &--contrast::before {
+    top: -6px;
+    left: 120px;
+  }
+}
+
+.filters__svg {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  fill: $dark-gray;
+  cursor: pointer;
+}
+
+.filters__svg:hover,
+.filters__radio:hover + .filters__checked-block > .filters__svg {
+  fill: $extra-dark-gray;
 }
 
 .filters__button {
@@ -31,10 +106,6 @@
     transform: none;
   }
 
-  .filters-form {
-    max-width: 275px;
-  }
-
   .filters__list {
     display: block;
     padding: 0;
@@ -44,6 +115,11 @@
   .filters__item {
     display: flex;
     justify-content: space-between;
+  }
+
+  .filters__range {
+    position: static;
+    display: block;
   }
 
   .filters__button {
@@ -56,10 +132,6 @@
 @media (min-width: $desktop-width) {
   .filters {
     padding: 60px 80px;
-  }
-
-  .filters-form {
-    min-width: 410px;
   }
 
   .filters__button {
