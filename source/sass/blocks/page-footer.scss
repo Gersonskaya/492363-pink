@@ -2,21 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 40px 0;
   background-color: $white;
-}
 
-.page-footer--index {
-  display: none;
+  &--index {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-  }
 
-  .page-footer--index {
-    display: flex;
+    &--index {
+      display: flex;
+    }
   }
 }

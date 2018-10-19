@@ -1,20 +1,20 @@
 .logo {
   margin: 20px;
   margin-bottom: 15px;
-}
 
-.logo--footer {
-  margin: 20px 0;
+  &--footer {
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .logo {
     margin-top: 25px;
     margin-bottom: 35px;
-  }
 
-  .logo--footer {
-    margin-top: 35px;
+    &--footer {
+      margin-top: 35px;
+    }
   }
 }
 
