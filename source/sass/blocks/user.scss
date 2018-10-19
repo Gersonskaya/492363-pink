@@ -1,5 +1,5 @@
 .user {
-  background-color: $light-grey;
+  background-color: $light-gray;
 }
 
 .user__photo--winner {
@@ -39,7 +39,11 @@
 }
 
 .user__heart {
-  margin-right: 25px;
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  margin-right: 15px;
+  background: url("./../../img/icon-heart.svg");
 }
 
 .user__winner {
