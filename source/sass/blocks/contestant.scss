@@ -8,7 +8,7 @@
 .contestant__checkbox,
 .contestant__radio {
   padding: 35px 20px;
-  background-color: $light-grey;
+  background-color: $light-gray;
 }
 
 .contestant__title {
@@ -26,6 +26,7 @@
   padding-top: 18px;
   padding-bottom: 17px;
 }
+
 @media (min-width: $tablet-width) {
   .contestant {
     padding: 45px 60px;
@@ -41,24 +42,24 @@
 
   .contestant__radio {
     order: 2;
-    border: 2px solid $double-grey;
+    border: 2px solid $double-gray;
   }
 
   .contestant__checkbox {
     order: 4;
-    border: 2px solid $double-grey;
+    border: 2px solid $double-gray;
   }
 
   .contestant__contacts {
     display: flex;
     flex-direction: column;
     order: 3;
-    border: 2px solid $double-grey;
+    border: 2px solid $double-gray;
   }
 
   .contestant__comments {
     order: 5;
-    border: 2px solid $double-grey;
+    border: 2px solid $double-gray;
   }
 
   .contestant__send {
