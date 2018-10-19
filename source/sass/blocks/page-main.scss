@@ -8,10 +8,10 @@
   font-weight: 100;
   text-align: center;
   color: $white;
-}
 
-.page-main__caption--form {
-  padding-bottom: 50px;
+  &--form {
+    padding-bottom: 50px;
+  }
 }
 
 .page-main__form {
@@ -20,7 +20,6 @@
 
 .page-main__text {
   padding: 50px 0;
-  margin: 0;
   text-align: center;
 }
 
@@ -52,20 +51,20 @@
     padding-top: 70px;
     padding-bottom: 100px;
     text-align: center;
-  }
 
-  .page-main__caption--form {
-    max-width: 850px;
+    &--form {
+      max-width: 850px;
+    }
   }
 
   .page-main__text {
     max-width: 770px;
     padding: 60px 0;
     font-size: 18px;
-  }
 
-  .page-main__text--back {
-    padding-top: 10px;
+    &--back {
+      padding-top: 10px;
+    }
   }
 
   .page-main__enter {
