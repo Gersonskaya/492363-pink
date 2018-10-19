@@ -1,21 +1,21 @@
 .container-fixed {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
 .container-fluid {
   width: 100%;
-  background-color: $light-grey;
+  background-color: $light-gray;
 }
 
 .container-fluid__angle-white {
-  background: $light-grey url("./../img/bg-triangle-white.svg") no-repeat center top;
+  background: $light-gray url("./../../img/bg-triangle-white.svg") no-repeat center top;
   background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
   .container-fixed {
-    width: 660px;
+    max-width: 660px;
   }
 
   .container-fluid--effect {
@@ -25,11 +25,11 @@
 
 @media (min-width: $desktop-width) {
   .container-fixed {
-    width: 960px;
+    max-width: 960px;
   }
 
   .container-fluid--effect {
-    background-color: $light-grey;
+    background-color: $light-gray;
   }
 
   .container-fluid--filters {
