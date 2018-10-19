@@ -5,8 +5,8 @@
 @media (min-width: $tablet-width) {
   .filter-name {
     display: block;
-    border-left: 2px solid $double-grey;
-    border-top: 2px solid $double-grey;
+    border-left: 2px solid $double-gray;
+    border-top: 2px solid $double-gray;
   }
 
   .filter-name__item {
@@ -14,6 +14,6 @@
     padding: 10px 15px;
     vertical-align: middle;
     background-color: $white;
-    border-bottom: 2px solid $double-grey;
+    border-bottom: 2px solid $double-gray;
   }
 }
