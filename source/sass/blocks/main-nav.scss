@@ -51,6 +51,12 @@
   transform: rotate3d(0, 0, 1, -45deg);
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav__toggle {
     display: none;

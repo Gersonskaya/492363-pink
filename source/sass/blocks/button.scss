@@ -28,13 +28,16 @@
   border: 3px solid $gray;
 }
 
-.button--form {
-  padding: 17px 0;
+.button--form,
+.button--error,
+.button--thanks {
+  padding: 16.5px 0;
+  line-height: 30px;
   text-transform: uppercase;
   color: $white;
-  border: none;
-  border-radius: 0;
   background-color: $green;
+  border: none;
+  border-radius: 2px;
 }
 
 @media (min-width: $tablet-width) {

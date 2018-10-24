@@ -1,10 +1,10 @@
 .photo {
-  padding: 0 20px;
   background-color: $white;
 }
 
 .photo__item {
-  margin-bottom: 20px;
+  margin: 20px;
+  margin-top: 0;
 
   &--best {
     position: relative;
@@ -25,17 +25,9 @@
       background-color: $pink;
     }
   }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media (min-width: $tablet-width) {
-  .photo {
-    padding: 0;
-  }
-
   .photo__list {
     display: flex;
     justify-content: space-between;
@@ -46,13 +38,15 @@
   .photo__item {
     display: flex;
     max-width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
 
     &--best {
-      min-width: 620px;
-    }
+      min-width: 100%;
 
-    &:last-child {
-      margin-bottom: 20px;
+      &::before {
+        margin-top: 57px;
+      }
     }
   }
 
@@ -67,11 +61,15 @@
     padding: 0 10px;
   }
 
+  .photo__list {
+    padding: 0;
+  }
+
   .photo__item {
     margin-bottom: 50px;
 
-    &--best {
-      min-width: 960px;
+    &--best::before {
+      margin-top: 54px;
     }
   }
 }

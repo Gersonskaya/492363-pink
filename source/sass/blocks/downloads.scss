@@ -1,6 +1,7 @@
-.downloads {
-  padding-top: 394px;
-  background: url("./../../img/iphone-hand-mobile@1x.png") no-repeat 0 108px;
+.downloads__image {
+  width: 320px;
+  height: 394px;
+  background: url("./../../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
 }
 
 .downloads__background {
@@ -14,9 +15,15 @@
 
 @media (min-width: $tablet-width) {
   .downloads {
+    max-width: 660px;
     padding: 100px 20px;
     padding-bottom: 50px;
+    margin: 0 auto;
     background: url("./../../img/iphone-hand-tablet@1x.png") no-repeat -20px 82px;
+  }
+
+  .downloads__image {
+    display: none;
   }
 
   .downloads__background {
@@ -39,6 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .downloads {
+    max-width: 960px;
     padding: 86px 10px;
     background: url("./../../img/iphone-hand-desktop@1x.png") no-repeat 25px 98px;
   }

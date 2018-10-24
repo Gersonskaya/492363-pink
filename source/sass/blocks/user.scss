@@ -46,18 +46,49 @@
   background: url("./../../img/icon-heart.svg");
 }
 
-.user__winner {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
-  .user {
-    width: 100%;
+  .user__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 155px;
+    padding: 27px;
+    padding-top: 15px;
+
+    &--winner {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      min-height: auto;
+    }
   }
 
-  .user__info {
-    width: 100%;
-    padding: 30px;
+  .user__info--winner > .user__name {
+    order: 1;
+  }
+
+  .user__info--winner > .user__comment {
+    order: 3;
+  }
+
+  .user__info--winner > .user__likes {
+    align-self: flex-end;
+    order: 2;
+    padding: 0;
+  }
+
+  .user__likes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .user__heart {
+    margin-right: 0;
+    margin-left: 15px;
   }
 }
 

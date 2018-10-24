@@ -19,8 +19,20 @@
 }
 
 .page-main__text {
-  padding: 50px 0;
+  padding: 40px 20px;
   text-align: center;
+
+  &--back {
+    padding-top: 30px;
+  }
+
+  &--form {
+    padding-bottom: 0;
+  }
+}
+
+.page-main__text-extra {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,8 +48,15 @@
 
   .page-main__text {
     max-width: 500px;
-    margin: 0 auto;
     font-size: 18px;
+
+    &--form {
+      padding: 80px 0;
+    }
+  }
+
+  .page-main__text-extra {
+    display: block;
   }
 
   .page-main__enter {
@@ -69,5 +88,9 @@
 
   .page-main__enter {
     display: block;
+  }
+
+  .page-main__text-extra {
+    display: inline;
   }
 }

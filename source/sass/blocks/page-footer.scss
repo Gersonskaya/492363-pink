@@ -14,10 +14,16 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 7px 20px;
 
     &--index {
       display: flex;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 44px 10px;
   }
 }
