@@ -1,0 +1,56 @@
+.contacts__text {
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 25px;
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 62px;
+      height: 63px;
+      content: "";
+      background: $double-gray;
+    }
+
+    &--phone::after {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 20px;
+      height: 20px;
+      content: "";
+      background: url("./../../img/icon-phone.svg");
+    }
+
+    &--email::after {
+      position: absolute;
+      top: 25px;
+      right: 23px;
+      width: 18px;
+      height: 14px;
+      content: "";
+      background: url("./../../img/icon-mail.svg");
+    }
+  }
+
+  .contacts__text {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 100%;
+    margin: 0 35px;
+  }
+}

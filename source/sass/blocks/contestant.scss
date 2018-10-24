@@ -1,14 +1,38 @@
 .contestant {
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0 20px;
   border: none;
+
+  &--names {
+    padding: 42px 20px;
+    padding-bottom: 22px;
+  }
+
+  &--radio,
+  &--checkbox {
+    background-color: $light-gray;
+  }
+
+  &--contacts {
+    padding: 23px 20px;
+    padding-top: 34px;
+  }
+
+  &--comments {
+    padding: 40px 20px;
+  }
+
+  &--send {
+    padding-bottom: 15px;
+  }
 }
 
-.contestant__checkbox,
-.contestant__radio {
-  padding: 35px 20px;
-  background-color: $light-gray;
+.contestant__app {
+  padding: 36px 20px;
+  padding-bottom: 5px;
+}
+
+.contestant__progress {
+  padding: 43px 20px;
+  padding-bottom: 0;
 }
 
 .contestant__title {
@@ -16,91 +40,293 @@
   padding: 0 15px;
   padding-bottom: 40px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $pink;
+
+  &--contacts {
+    display: none;
+  }
+
+  &--app {
+    padding-bottom: 36px;
+  }
+
+  &--comment {
+    padding-bottom: 17px;
+  }
 }
 
-.contestant__title--comment {
-  padding-top: 18px;
-  padding-bottom: 17px;
+.contestant__radio-block {
+  position: relative;
+  display: flex;
+  padding-bottom: 36px;
+}
+
+.contestant__checkboxes-block {
+  position: relative;
+  display: flex;
+  padding-bottom: 43px;
+}
+
+.contestant__label-text {
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.contestant__label-comment {
+  margin-bottom: 48px;
+}
+
+.contestant__label {
+  padding: 4px 0;
+  margin-left: 70px;
+  font-size: 18px;
+
+  &--radio {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 39px;
+      height: 39px;
+      content: "";
+      background-color: white;
+      border: 2px solid $triple-gray;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 15px;
+      height: 15px;
+      content: "";
+      background-color: $pink;
+      border-radius: 50%;
+    }
+  }
+
+  &--checkbox {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 39px;
+      height: 39px;
+      content: "";
+      background: $white;
+      border: 2px solid $triple-gray;
+      border-radius: 2px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 11px;
+      left: 9px;
+      width: 22px;
+      height: 11px;
+      content: "";
+      border-bottom: 3px solid $pink;
+      border-left: 3px solid $pink;
+      border-radius: 2px;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .contestant {
-    padding: 45px 60px;
-    background: $white;
-  }
-
-  .contestant__names {
-    display: flex;
-    flex-direction: column;
-    order: 1;
-    padding: 0;
-  }
-
-  .contestant__radio {
-    order: 2;
-    border: 2px solid $double-gray;
-  }
-
-  .contestant__checkbox {
-    order: 4;
-    border: 2px solid $double-gray;
-  }
-
-  .contestant__contacts {
-    display: flex;
-    flex-direction: column;
-    order: 3;
-    border: 2px solid $double-gray;
-  }
-
-  .contestant__comments {
-    order: 5;
-    border: 2px solid $double-gray;
-  }
-
-  .contestant__send {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    order: 6;
-    padding: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contestant {
     position: relative;
-  }
-
-  .contestant__names,
-  .contestant__radio {
-    width: 435px;
-  }
-
-  .contestant__contacts,
-  .contestant__checkbox,
-  .contestant__comments,
-  .contestant__send {
     width: 100%;
+    margin-bottom: 65px;
+    background: $white;
+    border: 2px solid $double-gray;
+    border-radius: 3px;
+
+    &--names {
+      display: flex;
+      flex-direction: column;
+      order: 1;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 14px;
+      border: none;
+    }
+
+    &--radio {
+      order: 2;
+      border: none;
+    }
+
+    &--checkbox {
+      order: 4;
+      border: none;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+      order: 3;
+      padding: 20px 60px;
+    }
+
+    &--comments {
+      order: 5;
+      padding: 45px 60px;
+    }
+
+    &--send {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      order: 6;
+      padding: 0;
+      border: none;
+    }
   }
 
-  .contestant__names {
-    justify-content: space-between;
+  .contestant__app {
+    padding: 52px 60px;
+    padding-bottom: 18px;
+    border: 2px solid $double-gray;
+    border-radius: 3px;
   }
 
-  .contestant__contacts {
-    flex-direction: row;
+  .contestant__progress {
+    padding: 52px 60px;
+    padding-bottom: 5px;
+    border: 2px solid $double-gray;
+    border-radius: 3px;
   }
 
   .contestant__title {
     position: absolute;
     top: -10px;
-    left: 10%;
-    padding: 0 25px;
-    background-color: white;
+    display: block;
+    background-color: $white;
+
+    &--contacts {
+      left: 180px;
+      padding: 0 32px;
+    }
+
+    &--progress {
+      left: 90px;
+      padding: 0 33px;
+    }
+
+    &--app {
+      left: 125px;
+      padding: 0 24px;
+    }
+
+    &--comments {
+      left: 180px;
+      padding: 0 37px;
+    }
+  }
+
+  .contestant__label-name {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 52px;
+  }
+
+  .contestant__label-text {
+    padding: 0;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contestant {
+    &--names,
+    &--radio {
+      max-width: 435px;
+    }
+
+    &--names {
+      justify-content: space-between;
+    }
+
+    &--contacts {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 42px 25px;
+      padding-bottom: 10px;
+    }
+
+    &--comments {
+      padding: 43px 60px;
+    }
+
+    &--send {
+      margin-bottom: 0;
+    }
+  }
+
+  .contestant__app {
+    padding: 55px 74px;
+    padding-bottom: 24px;
+  }
+
+  .contestant__progress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-right: 10px;
+  }
+
+  .contestant__title {
+    &--contacts,
+    &--comments {
+      left: 340px;
+    }
+
+    &--progress {
+      left: 252px;
+    }
+
+    &--app {
+      left: 33px;
+    }
+  }
+
+  .contestant__checkboxes-block {
+    min-width: 260px;
+
+    &--selfie {
+      order: 1;
+    }
+
+    &--chuck {
+      order: 2;
+    }
+
+    &--tower {
+      order: 3;
+    }
+
+    &--burned {
+      order: 4;
+    }
+
+    &--souvenirs {
+      order: 5;
+    }
+
+    &--hotel {
+      order: 6;
+    }
+  }
+
+  .contestant__label {
+    margin-left: 60px;
   }
 }
