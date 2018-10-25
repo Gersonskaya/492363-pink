@@ -95,8 +95,16 @@
       height: 39px;
       content: "";
       background-color: white;
-      border: 2px solid $triple-gray;
+      border: 2px solid $double-gray;
       border-radius: 50%;
+    }
+
+    &:hover::before {
+      border-color: $dark-blue;
+    }
+
+    &:active::before {
+      border-color: $pink;
     }
 
     &::after {
@@ -120,8 +128,16 @@
       height: 39px;
       content: "";
       background: $white;
-      border: 2px solid $triple-gray;
+      border: 2px solid $double-gray;
       border-radius: 2px;
+    }
+
+    &:hover::before {
+      border-color: $dark-blue;
+    }
+
+    &:active::before {
+      border-color: $pink;
     }
 
     &::after {

@@ -7,6 +7,15 @@
 .copyright__image {
   width: 40px;
   height: auto;
+  fill: $pink;
+
+  &:hover {
+    fill: $dark-blue;
+  }
+
+  &:active {
+    fill: $super-dark-gray;
+  }
 }
 
 .copyright__title {

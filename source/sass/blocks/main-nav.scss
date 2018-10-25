@@ -4,6 +4,11 @@
   right: 20px;
   background: transparent;
   border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .main-nav__toggle > span {
@@ -12,16 +17,29 @@
   width: 50px;
   height: 4px;
   background: $white;
-}
 
-.main-nav__toggle > span::after,
-.main-nav__toggle > span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  background: $white;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: $white;
+  }
+
+  &:hover,
+  &:hover::after,
+  &:hover::before {
+    background-color: $pink;
+  }
+
+  &:active,
+  &:active::after,
+  &:active::before {
+    background-color: $pink;
+    opacity: 0.5;
+  }
 }
 
 .main-nav__toggle--closed > span::before {
@@ -35,6 +53,11 @@
 .main-nav__toggle--opened > span {
   width: 30px;
   background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
 }
 
 .main-nav__toggle--opened > span::after,
@@ -53,7 +76,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: 45px;
+    top: 42px;
   }
 }
 

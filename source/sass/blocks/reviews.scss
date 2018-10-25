@@ -83,21 +83,32 @@
     display: none;
   }
 
-  .reviews__back,
-  .reviews__next {
+  .reviews__button {
     position: absolute;
+    top: 50%;
     display: block;
     background: transparent;
     border: none;
+    cursor: pointer;
+
+    &--back {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    &:hover > .reviews__svg {
+      fill: $darked-gray;
+    }
+
+    &:active > .reviews__svg {
+      fill: $super-gray;
+    }
   }
 
-  .reviews__back {
-    top: 50%;
-    left: 0;
-  }
-
-  .reviews__next {
-    top: 50%;
-    right: 0;
+  .reviews__svg {
+    fill: $super-dark-gray;
   }
 }

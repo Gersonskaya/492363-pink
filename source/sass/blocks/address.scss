@@ -21,6 +21,28 @@
   font-size: 24px;
   font-weight: 100;
   color: $pink;
+
+  &--mail:hover {
+    position: relative;
+    color: $dark-blue;
+
+    &::before {
+      position: absolute;
+      width: 252px;
+      height: 29px;
+      content: "";
+      border-bottom: 2px solid $dark-blue;
+    }
+  }
+
+  &--mail:active {
+    position: static;
+    color: $super-dark-gray;
+
+    &:active::before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

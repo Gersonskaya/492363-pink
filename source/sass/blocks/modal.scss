@@ -7,12 +7,12 @@
 
   &--thanks {
     top: 1330px;
-    display: block;
+    display: none;
   }
 
   &--error {
     top: 840px;
-    display: block;
+    display: none;
     background-color: $white;
   }
 }

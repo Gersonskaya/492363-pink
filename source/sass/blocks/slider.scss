@@ -16,6 +16,14 @@
   border-radius: 50%;
   background-color: $super-dark-gray;
   cursor: pointer;
+
+  &:hover {
+    background-color: $darked-gray;
+  }
+
+  &:active {
+    background-color: $super-gray;
+  }
 }
 
 .slider__radio:checked + .slider__label::before {

@@ -12,8 +12,17 @@
   width: 100%;
   padding: 16.5px 20px;
   line-height: 30px;
-  border: 2px solid $super-gray;
+  border: 2px solid $double-gray;
   border-radius: 3px;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+    outline: none;
+  }
 
   &::placeholder {
     font-family: "OpenSans", "Arial", sans-serif;
