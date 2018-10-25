@@ -5,10 +5,25 @@
 }
 
 .copyright__image {
-  margin-left: 10px;
+  fill: $pink;
+
+  &:hover {
+    fill: $dark-blue;
+  }
+
+  &:active {
+    fill: $super-dark-gray;
+  }
 }
 
 .copyright__title {
   margin: 0;
   padding-bottom: 5px;
+  margin-right: 5px;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__title {
+    font-size: 18px;
+  }
 }

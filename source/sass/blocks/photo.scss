@@ -1,10 +1,30 @@
 .photo {
-  padding: 0 20px;
   background-color: $white;
 }
 
 .photo__item {
-  margin-bottom: 20px;
+  margin: 20px;
+  margin-top: 0;
+
+  &--best {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      width: 140px;
+      height: 36px;
+      padding: 6px 0;
+      content: "панорама дня";
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      background-color: $pink;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -12,16 +32,22 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 20px;
   }
 
   .photo__item {
     display: flex;
     max-width: 300px;
+    margin: 0;
     margin-bottom: 20px;
-  }
 
-  .photo__item--best {
-    min-width: 620px;
+    &--best {
+      min-width: 100%;
+
+      &::before {
+        margin-top: 57px;
+      }
+    }
   }
 
   .photo__item--best > .user,
@@ -35,11 +61,15 @@
     padding: 0 10px;
   }
 
-  .photo__item {
-    margin-bottom: 50px;
+  .photo__list {
+    padding: 0;
   }
 
-  .photo__item--best {
-    min-width: 940px;
+  .photo__item {
+    margin-bottom: 50px;
+
+    &--best::before {
+      margin-top: 54px;
+    }
   }
 }

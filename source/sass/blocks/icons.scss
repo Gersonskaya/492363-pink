@@ -25,17 +25,18 @@
 @media (min-width: $tablet-width) {
   .icons {
     max-width: 300px;
-    padding: 0 30px;
+    padding: 0;
     margin: 0;
   }
 
   .icons__list {
-    padding: 45px;
-    padding-top: 65px;
-    padding-bottom: 35px;
+    padding: 51px;
+    padding-top: 42px;
+    padding-bottom: 30px;
   }
 
   .icons__description {
+    font-size: 18px;
     padding-bottom: 10px;
   }
 }

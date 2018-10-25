@@ -9,11 +9,38 @@
     padding: 20px;
     padding-top: 60px;
     background-color: $white;
+    background-size: contain;
   }
 
   .effect__image {
+    position: relative;
     width: 240px;
     height: 280px;
+    background: url("./../../img/icon-timer.svg") no-repeat;
+    background-size: contain;
+
+    &::before {
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      display: block;
+      content: "";
+      width: 200px;
+      height: 200px;
+      border: 15px solid $pink;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 140px;
+      left: 63px;
+      content: "24";
+      font-size: 96px;
+      font-weight: 600;
+      text-align: center;
+      color: $pink;
+    }
   }
 
   .effect__block {
@@ -48,7 +75,7 @@
     justify-content: flex-start;
     padding: 70px 10px;
     font-size: 18px;
-    background-color: $light-grey;
+    background-color: $light-gray;
   }
 
   .effect__block {
@@ -75,5 +102,18 @@
   .effect__image {
     width: 300px;
     height: 345px;
+
+    &::before {
+      top: 70px;
+      left: 22px;
+      width: 253px;
+      height: 253px;
+    }
+
+    &::after {
+      top: 175px;
+      left: 75px;
+      font-size: 120px;
+    }
   }
 }

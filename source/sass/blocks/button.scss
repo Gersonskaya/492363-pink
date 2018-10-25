@@ -15,26 +15,72 @@
 .button--downloads {
   color: $white;
   border: 3px solid $white;
+
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: $clear-pink;
+  }
 }
 
 .button--post {
   margin-bottom: 10px;
   color: $pink;
   border: 3px solid $pink;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+
+  &:active {
+    color: $clear-white;
+    background-color: $pink;
+  }
 }
 
 .button--reset {
   color: $gray;
   border: 3px solid $gray;
+
+  &:hover {
+    color: $dark-gray;
+    border-color: $dark-gray;
+  }
+
+  &:active {
+    color: $clear-white;
+    background-color: $dark-gray;
+    border-color: $dark-gray;
+  }
 }
 
-.button--form {
-  padding: 17px 0;
+.button--form,
+.button--error,
+.button--thanks {
+  padding: 16.5px 0;
+  line-height: 30px;
   text-transform: uppercase;
   color: $white;
-  border: none;
-  border-radius: 0;
   background-color: $green;
+  border: none;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $hover-green;
+  }
+
+  &:active {
+    color: $clear-white;
+    background-color: $hover-green;
+  }
+
+  &:disabled {
+    background-color: $double-gray;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,5 +91,11 @@
 
   .button--form {
     padding: 22px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--downloads {
+    font-size: 21px;
   }
 }

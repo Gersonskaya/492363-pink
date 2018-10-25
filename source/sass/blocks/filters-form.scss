@@ -1,23 +1,30 @@
-.filters-form__range {
-  position: absolute;
-  top: 50px;
-  left: 40px;
+.filters-form {
+  padding-top: 50px;
+}
+
+.filters-form__radio {
   display: none;
 }
 
-.filters-form__radio:checked + .filters-form__range {
+.filters-form__radio:checked + .filters__checked-block > .filters__range {
   display: block;
+}
+
+.filters-form__radio:checked + .filters__checked-block > .filters__svg,
+.filters-form__radio:checked:hover + .filters__checked-block > .filters__svg {
+  fill: $pink;
 }
 
 @media (min-width: $tablet-width) {
   .filters-form {
     display: flex;
     flex-direction: column;
-    max-width: 275px;
+    padding: 0;
   }
+}
 
-  .filters-form__range {
-    position: static;
-    display: block;
+@media (min-width: $desktop-width) {
+  .filters-form {
+    min-width: 410px;
   }
 }

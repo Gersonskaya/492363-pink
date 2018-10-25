@@ -1,11 +1,35 @@
 .map {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 645px;
   background-image: url("./../../img/bg-map-mobile@1x.png");
+}
+
+.map__address {
+  min-height: 465px;
+  background: url("./../../img/bg-triangle-white-footer.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.map__marker {
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
   .map {
     min-height: 780px;
-    background-image: url("./../../img/bg-map-tablet@1x.jpg");
+    background: url("./../../img/bg-map-tablet@1x.jpg") 0 60px;
+  }
+
+  .map__address {
+    min-height: 475px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    min-height: 870px;
+    background: url("./../../img/bg-map-desktop@1x.jpg") center 100px;
   }
 }

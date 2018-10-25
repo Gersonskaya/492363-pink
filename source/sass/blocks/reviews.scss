@@ -10,10 +10,10 @@
   margin: 0;
   display: none;
   text-align: center;
-}
 
-.reviews__item--active {
-  display: block;
+  &--active {
+    display: block;
+  }
 }
 
 .reviews__title {
@@ -28,13 +28,16 @@
   margin: 0;
 }
 
-.reviews__subtitle {
+.reviews__subtitle,
+.reviews__back,
+.reviews__next {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 100px 0;
+    padding-bottom: 0;
   }
 
   .reviews__title {
@@ -57,16 +60,55 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .reviews__slider {
+    padding-bottom: 3px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
+    position: relative;
     padding-bottom: 0;
     padding-top: 185px;
+    background: url("./../../img/icon-quotes.svg") no-repeat center 20%;
   }
 
   .reviews__item {
     max-width: 700px;
     margin: 0 auto;
+  }
+
+  .reviews__slider {
+    display: none;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 50%;
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--back {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    &:hover > .reviews__svg {
+      fill: $darked-gray;
+    }
+
+    &:active > .reviews__svg {
+      fill: $super-gray;
+    }
+  }
+
+  .reviews__svg {
+    fill: $super-dark-gray;
   }
 }

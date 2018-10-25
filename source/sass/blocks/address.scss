@@ -1,7 +1,7 @@
 .address {
   padding: 35px 20px;
   text-align: center;
-  background-color: $white;
+  background: $white;
 }
 
 .address__title {
@@ -21,6 +21,28 @@
   font-size: 24px;
   font-weight: 100;
   color: $pink;
+
+  &--mail:hover {
+    position: relative;
+    color: $dark-blue;
+
+    &::before {
+      position: absolute;
+      width: 252px;
+      height: 29px;
+      content: "";
+      border-bottom: 2px solid $dark-blue;
+    }
+  }
+
+  &--mail:active {
+    position: static;
+    color: $super-dark-gray;
+
+    &:active::before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -42,14 +64,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .address {
+    padding: 0;
+  }
+
   .address__title {
-    padding: 0 200px;
+    padding: 70px 200px;
+    padding-bottom: 40px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .address__item {
-    max-width: 250px;
+    min-width: 250px;
   }
 
   .address__item--1 {

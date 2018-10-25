@@ -1,18 +1,29 @@
-.page-footer--index {
-  display: none;
-}
-
 .page-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 40px 0;
   background-color: $white;
+
+  &--index {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+    padding: 7px 20px;
+
+    &--index {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 44px 10px;
   }
 }

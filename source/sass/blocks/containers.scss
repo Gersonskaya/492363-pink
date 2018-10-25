@@ -1,0 +1,38 @@
+.container-fixed {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  background-color: $light-gray;
+}
+
+.container-fluid__angle-white {
+  background: $light-gray url("./../../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .container-fixed {
+    max-width: 660px;
+  }
+
+  .container-fluid--effect {
+    background-color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-fixed {
+    max-width: 960px;
+  }
+
+  .container-fluid--effect {
+    background-color: $light-gray;
+  }
+
+  .container-fluid--filters {
+    background-color: $white;
+  }
+}

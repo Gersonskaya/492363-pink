@@ -1,6 +1,6 @@
 .filters {
   padding-bottom: 30px;
-  background-color: $light-grey;
+  background-color: $light-gray;
 }
 
 .filters__your-picture {
@@ -11,9 +11,103 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 30px 40px;
-  margin-bottom: 35px;
-  border-bottom: 1px solid $gray;
+  align-items: center;
+  padding-bottom: 60px;
+  margin-bottom: 38px;
+  border-bottom: 1px solid $super-light-blue;
+}
+
+.filters__item {
+  position: relative;
+  padding: 0 15px;
+}
+
+.filters__radio {
+  position: relative;
+  z-index: 1;
+  display: block;
+  cursor: pointer;
+
+  &--crop {
+    width: 46px;
+    height: 46px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.filters__radio:hover + .filters-form__radio + .filters__checked-block > .filters__svg {
+  fill: $extra-dark-gray;
+}
+
+.filters__svg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 15px;
+  fill: $dark-gray;
+  cursor: pointer;
+}
+
+.filters__range {
+  position: absolute;
+  display: none;
+  width: 240px;
+  height: 2px;
+  background-color: $dark-blue;
+
+  &--crop {
+    top: 75px;
+    left: -15%;
+  }
+
+  &--fill {
+    top: 74px;
+    left: -87px;
+  }
+
+  &--contrast {
+    top: 68px;
+    left: -165px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $light-gray;
+    border: 2px solid $pink;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  &:active::before {
+    background-color: $pink;
+  }
+
+  &--crop::before {
+    top: -6px;
+    left: 190px;
+  }
+
+  &--fill::before {
+    top: -6px;
+    left: 30px;
+  }
+
+  &--contrast::before {
+    top: -6px;
+    left: 120px;
+  }
 }
 
 .filters__button {
@@ -24,26 +118,93 @@
   .filters {
     display: flex;
     justify-content: space-between;
-    padding: 55px 20px;
+    padding: 35px 20px;
   }
 
   .filters__your-picture {
+    min-width: 300px;
+    min-height: 400px;
+    margin: 20px 0;
     transform: none;
   }
 
-  .filters-form {
-    max-width: 275px;
-  }
-
   .filters__list {
-    display: block;
+    flex-direction: column;
     padding: 0;
-    margin-bottom: auto;
+    margin: 0;
+    border: none;
   }
 
   .filters__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-width: 275px;
+    min-height: 70px;
+    border-bottom: 1px solid $super-light-blue;
+  }
+
+  .filters__radio--contrast {
+    transform: translate(5px, 0);
+  }
+
+  .filters__radio:hover + .filters-form__radio + .filters__checked-block > .filters__svg {
+    fill: $pink;
+  }
+
+  .filters__svg {
+    top: 23px;
+    left: 0;
+    fill: $pink;
+
+    &--contrast {
+      transform: translate(5px, 3px);
+    }
+  }
+
+  .filters__radio,
+  .filters__svg {
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .filters__range {
+    position: static;
+    width: 202px;
+    display: block;
+
+    &--crop::before {
+      left: 200px;
+    }
+
+    &--fill::before {
+      left: 80px;
+    }
+
+    &--contrast::before {
+      left: 150px;
+    }
+
+    &::before {
+      top: 27px;
+    }
+  }
+
+  .filters__buttons-block {
+    margin-top: auto;
+    padding-bottom: 20px;
   }
 
   .filters__button {
@@ -55,11 +216,58 @@
 
 @media (min-width: $desktop-width) {
   .filters {
-    padding: 60px 80px;
+    padding: 44px 80px;
   }
 
-  .filters-form {
-    min-width: 410px;
+  .filters__your-picture {
+    margin: 17px 0;
+  }
+
+  .filters__item {
+    width: 100%;
+    padding: 17px 30px;
+    padding-left: 0;
+  }
+
+  .filters__svg {
+    top: 16px;
+  }
+
+  .filters__radio,
+  .filters__svg {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .filters__range {
+    width: 288px;
+
+    &--crop::before {
+      top: 31px;
+      left: 163px;
+    }
+
+    &--fill::before {
+      top: 32px;
+      left: 339px;
+    }
+
+    &--contrast::before {
+      top: 28px;
+      left: 252px;
+    }
   }
 
   .filters__button {

@@ -10,7 +10,7 @@
   }
 
   .carousel__service {
-    border-left: 2px solid $double-grey;
+    border-left: 2px solid $double-gray;
   }
 }
 
@@ -20,13 +20,13 @@
   }
 
   .carousel__service {
-    border-right: 2px solid $double-grey;
+    border-right: 2px solid $double-gray;
   }
 }
 
 .carousel__base,
 .carousel__standart {
-  border-right: 2px solid $double-grey;
+  border-right: 2px solid $double-gray;
 }
 
 .carousel__header {
@@ -55,16 +55,55 @@
 
 .carousel__service {
   display: flex;
-  padding: 15px 20px;
+  min-height: 52px;
+  padding: 15px 22px;
+  padding-right: 17px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
   background-color: $white;
-  border-bottom: 2px solid $double-grey;
+  border-bottom: 2px solid $double-gray;
 }
 
 .carousel__name {
   margin-right: auto;
+}
+
+.carousel__yes {
+  width: 31px;
+  height: 21px;
+  margin-right: -4px;
+  background: url("./../../img/icon-yes.svg") no-repeat;
+  background-size: contain;
+}
+
+.carousel__no {
+  width: 27px;
+  height: 26px;
+  margin-right: -1px;
+  background: url("./../../img/icon-no.svg") no-repeat;
+  background-size: contain;
+}
+
+.carousel__header--hit {
+  position: relative;
+}
+
+.carousel__header--hit::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 73px;
+  height: 73px;
+  background: url("./../../img/bg-hit.svg");
+}
+
+.carousel__header--hit::after {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  content: "хит";
+  transform: rotate(-45deg);
 }
 
 @media (min-width: $tablet-width) {
@@ -93,5 +132,16 @@
   .carousel__service {
     justify-content: center;
     padding: 10px 0;
+  }
+
+  .carousel__header--hit::before {
+    width: 60px;
+    height: 60px;
+    background: url("./../../img/bg-hit-tablet.svg");
+  }
+
+  .carousel__header--hit::after {
+    top: 5px;
+    left: 5px;
   }
 }

@@ -19,6 +19,15 @@
     color: $white;
     text-decoration: none;
     vertical-align: middle;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: $pink;
+      opacity: 0.5;
+    }
   }
 }
 
@@ -30,9 +39,19 @@
 
   .site-navigation__item {
     justify-content: space-between;
-    padding-left: 80px;
+    padding: 0;
+    padding-bottom: 4px;
+    margin-left: 80px;
     font-weight: 400;
     text-transform: capitalize;
     border: none;
+
+    a:active {
+      color: $white;
+    }
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }
