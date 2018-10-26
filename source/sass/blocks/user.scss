@@ -47,6 +47,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .user__photo {
+    width: 300px;
+    height: auto;
+
+    &--winner {
+      width: calc(100% + 80px);
+      margin: 0 -40px;
+    }
+  }
+
   .user__info {
     display: flex;
     flex-direction: column;
@@ -94,6 +104,8 @@
 
 @media (min-width: $desktop-width) {
   .user__photo--winner {
-    margin: 0;
+    width: calc(100% + 260px);
+    height: 506px;
+    margin: 0 -130px;
   }
 }
