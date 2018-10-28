@@ -12,12 +12,12 @@
   line-height: 30px;
   font-weight: 400;
   color: $dark-blue;
-  background-image: url("./../../img/bg-back-mobile@1x.jpg");
+  background-image: url("./../img/bg-back-mobile@1x.jpg");
   background-repeat: repeat-x;
   background-position: center 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("./../../img/bg-back-mobile@2x.jpg");
+    background-image: url("./../img/bg-back-mobile@2x.jpg");
     background-size: 700px 462px;
     background-position: center 0;
     background-repeat: repeat-x;
@@ -46,12 +46,12 @@
 
 @media (min-width: $tablet-width) {
   .body {
-    background-image: url("./../../img/bg-back-tablet@1x.jpg");
+    background-image: url("./../img/bg-back-tablet@1x.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("./../../img/bg-back-tablet@2x.jpg");
+      background-image: url("./../img/bg-back-tablet@2x.jpg");
       background-size: 1200px 729px;
       background-position: center 0;
       background-repeat: no-repeat;
@@ -65,12 +65,12 @@
 
 @media (min-width: $desktop-width) {
   .body {
-    background-image: url("./../../img/bg-back-desktop@1x.jpg");
+    background-image: url("./../img/bg-back-desktop@1x.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("./../../img/bg-back-desktop@2x.jpg");
+      background-image: url("./../img/bg-back-desktop@2x.jpg");
       background-size: 2560px 853px;
       background-position: center 0;
       background-repeat: no-repeat;
