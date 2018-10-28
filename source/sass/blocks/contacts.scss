@@ -15,8 +15,8 @@
       position: absolute;
       top: 2px;
       right: 2px;
-      width: 60px;
-      height: 60px;
+      width: 57px;
+      height: 57px;
       content: "";
       background: $double-gray;
     }
@@ -28,7 +28,7 @@
       width: 20px;
       height: 20px;
       content: "";
-      background: url("./../../img/icon-phone.svg");
+      background: url("./../img/icon-phone.svg");
     }
 
     &--email::after {
@@ -38,7 +38,7 @@
       width: 18px;
       height: 14px;
       content: "";
-      background: url("./../../img/icon-mail.svg");
+      background: url("./../img/icon-mail.svg");
     }
   }
 

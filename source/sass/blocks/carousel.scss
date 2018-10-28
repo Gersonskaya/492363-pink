@@ -73,14 +73,14 @@
 .carousel__yes {
   width: 30px;
   height: 30px;
-  background: url("./../../img/icon-yes.svg") no-repeat 0 5px;
+  background: url("./../img/icon-yes.svg") no-repeat 0 5px;
   background-size: contain;
 }
 
 .carousel__no {
   width: 30px;
   height: 27px;
-  background: url("./../../img/icon-no.svg") no-repeat 0 0;
+  background: url("./../img/icon-no.svg") no-repeat 0 0;
   background-size: contain;
 }
 
@@ -94,7 +94,7 @@
   content: "";
   width: 73px;
   height: 73px;
-  background: url("./../../img/bg-hit.svg");
+  background: url("./../img/bg-hit.svg");
 }
 
 .carousel__header--hit::after {
@@ -137,7 +137,7 @@
   .carousel__header--hit::before {
     width: 60px;
     height: 60px;
-    background: url("./../../img/bg-hit-tablet.svg");
+    background: url("./../img/bg-hit-tablet.svg");
   }
 
   .carousel__header--hit::after {
@@ -154,7 +154,7 @@
     &--hit::before {
       width: 73px;
       height: 73px;
-      background: url("./../../img/bg-hit.svg");
+      background: url("./../img/bg-hit.svg");
     }
 
     &--hit::after {

@@ -9,11 +9,15 @@
 }
 
 .rate__carousel {
-  align-self: center;
+  position: absolute;
+  top: 91px;
+  left: -257px;
 }
 
 .rate__slider {
-  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 121px;
 }
 
 @media (min-width: $tablet-width) {

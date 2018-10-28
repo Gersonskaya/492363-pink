@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Пинк: Конкурс</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
-  <body>
-  <header class="page-header">
+  <body class="body" id="body">
+  <header class="page-header" id="header">
     <div class="page-header__navigation">
       <a class="page-header__logo" href="index.html">
         <div class="logo logo--header">
@@ -60,16 +60,16 @@
         </div>
       </a>
       <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+        <button class="main-nav__toggle" id="button" type="button">
           <span></span>
         </button>
-        <div class="main-nav__hidden">
+        <div class="main-nav__hidden" id="menu">
           <ul class="main-nav__list list-none site-navigation">
             <li class="site-navigation__item">
-              <a href="index.html">Главная</a>
+              <a href="./index.html">Главная</a>
             </li>
             <li class="site-navigation__item">
-              <a href="photo.html">Фотографии</a>
+              <a href="./photo.html">Фотографии</a>
             </li>
             <li class="site-navigation__item site-navigation__item--active">
               <a>Конкурс</a>
@@ -287,5 +287,6 @@
       </a>
     </section>
   </footer>
+  <script src="./js/menu.js"></script>
   </body>
 </html>

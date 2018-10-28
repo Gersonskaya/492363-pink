@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Пинк: Фото</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
-  <body>
-  <header class="page-header">
+  <body class="body" id="body">
+  <header class="page-header" id="header">
     <div class="page-header__navigation">
       <a class="page-header__logo" href="index.html">
         <div class="logo logo--header">
@@ -60,19 +60,19 @@
         </div>
       </a>
       <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+        <button class="main-nav__toggle" id="button" type="button">
           <span></span>
         </button>
-        <div class="main-nav__hidden">
+        <div class="main-nav__hidden" id="menu">
           <ul class="main-nav__list list-none site-navigation">
             <li class="site-navigation__item">
-              <a href="index.html">Главная</a>
+              <a href="./index.html">Главная</a>
             </li>
             <li class="site-navigation__item site-navigation__item--active">
               <a>Фотографии</a>
             </li>
             <li class="site-navigation__item">
-              <a href="form.html">Конкурс</a>
+              <a href="./form.html">Конкурс</a>
             </li>
             <li class="site-navigation__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -94,7 +94,7 @@
         <li class="photo__item photo__item--best">
           <section class="user">
             <h2 class="user__title visually-hidden">Пост пользователя</h2>
-            <a href="#" class="user__photo-linc">
+            <a href="#">
               <picture>
                 <source media="(min-width: 960px)" srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
@@ -113,7 +113,7 @@
         <li class="photo__item">
           <section class="user">
             <h2 class="user__title visually-hidden">Пост пользователя</h2>
-            <a href="#" class="user__photo-linc">
+            <a href="#">
               <picture>
                 <source media="(min-width: 960px)" srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
@@ -131,7 +131,7 @@
         <li class="photo__item">
           <section class="user">
             <h2 class="user__title visually-hidden">Пост пользователя</h2>
-            <a href="#" class="user__photo-linc">
+            <a href="#">
               <picture>
                 <source media="(min-width: 960px)" srcset="./img/photo-drumset-desktop@1x.jpg 1x, ./img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg 1x, ./img/photo-drumset-tablet@2x.jpg 2x">
@@ -149,7 +149,7 @@
         <li class="photo__item">
           <section class="user">
             <h2 class="user__title visually-hidden">Пост пользователя</h2>
-            <a href="#" class="user__photo-linc">
+            <a href="#">
               <picture>
                 <source media="(min-width: 960px)" srcset="./img/photo-window-desktop@1x.jpg 1x, ./img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg 1x, ./img/photo-window-tablet@2x.jpg 2x">
@@ -167,7 +167,7 @@
         <li class="photo__item">
           <section class="user">
             <h2 class="user__title visually-hidden">Пост пользователя</h2>
-            <a href="#" class="user__photo-linc">
+            <a href="#">
               <picture>
                 <source media="(min-width: 960px)" srcset="./img/photo-fair-desktop@1x.jpg 1x, ./img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg 1x, ./img/photo-fair-tablet@2x.jpg 2x">
@@ -185,7 +185,7 @@
         <li class="photo__item">
           <section class="user">
             <h2 class="user__title visually-hidden">Пост пользователя</h2>
-            <a href="#" class="user__photo-linc">
+            <a href="#">
               <picture>
                 <source media="(min-width: 960px)" srcset="./img/photo-pov-desktop@1x.jpg 1x, ./img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg 1x, ./img/photo-pov-tablet@2x.jpg 2x">
@@ -203,7 +203,7 @@
         <li class="photo__item">
           <section class="user">
             <h2 class="user__title visually-hidden">Пост пользователя</h2>
-            <a class="user__photo-linc" href="#">
+            <a href="#">
               <picture>
                 <source media="(min-width: 960px)" srcset="./img/photo-wing-desktop@1x.jpg 1x, ./img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg 1x, ./img/photo-wing-tablet@2x.jpg 2x">
@@ -233,7 +233,7 @@
           <source srcset="./img/photo-road-mobile@1x.jpg 1x, ./img/photo-road-mobile@2x.jpg 2x">
           <img class="filters__your-picture" src="./img/photo-road-mobile@1x.jpg" alt="Ваше фото для публикации" width="280" height="374">
         </picture>
-        <form action="https://echo.htmlacademy.ru" method="post" class="filters-form">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="filters__list list-none">
             <li class="filters__item">
               <label class="filters__radio filters__radio--crop" for="crop"></label>
@@ -367,5 +367,6 @@
       </a>
     </section>
   </footer>
+  <script src="./js/menu.js"></script>
   </body>
 </html>

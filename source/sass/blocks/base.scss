@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   padding: 0;
   margin: 0;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -12,13 +12,19 @@ body {
   line-height: 30px;
   font-weight: 400;
   color: $dark-blue;
-  background: url("./../../img/bg-back-mobile@1x.jpg") repeat-x center 265px;
+  background-image: url("./../img/bg-back-mobile@1x.jpg");
+  background-repeat: repeat-x;
+  background-position: center 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("./../../img/bg-back-mobile@2x.jpg");
+    background-image: url("./../img/bg-back-mobile@2x.jpg");
     background-size: 700px 462px;
-    background-position: center 265px;
+    background-position: center 0;
     background-repeat: repeat-x;
+  }
+
+  &--opened {
+    background-position: center 265px;
   }
 }
 
@@ -39,24 +45,32 @@ body {
 }
 
 @media (min-width: $tablet-width) {
-  body {
-    background: url("./../../img/bg-back-tablet@1x.jpg") no-repeat center 256px;
+  .body {
+    background-image: url("./../img/bg-back-tablet@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("./../../img/bg-back-tablet@2x.jpg");
+      background-image: url("./../img/bg-back-tablet@2x.jpg");
       background-size: 1200px 729px;
-      background-position: center 256px;
+      background-position: center 0;
       background-repeat: no-repeat;
     }
+  }
+
+  .body--opened {
+    background-position: center 256px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    background: url("./../../img/bg-back-desktop@1x.jpg") no-repeat center 0;
+  .body {
+    background-image: url("./../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("./../../img/bg-back-desktop@2x.jpg");
+      background-image: url("./../img/bg-back-desktop@2x.jpg");
       background-size: 2560px 853px;
       background-position: center 0;
       background-repeat: no-repeat;
