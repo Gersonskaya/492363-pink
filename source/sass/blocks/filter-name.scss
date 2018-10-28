@@ -10,10 +10,18 @@
   }
 
   .filter-name__item {
-    min-width: 155px;
-    padding: 10px 15px;
+    min-width: 153px;
+    padding: 7.5px 15px;
     vertical-align: middle;
     background-color: $white;
     border-bottom: 2px solid $double-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-name__item {
+    min-width: 232px;
+    padding: 14.5px 20px;
+    font-size: 18px;
   }
 }

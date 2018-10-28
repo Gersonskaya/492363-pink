@@ -59,7 +59,7 @@
           </svg>
         </div>
       </a>
-      <nav class="page-header__main-nav main-nav">
+      <nav class="page-header__main-nav main-nav main-nav--opened">
         <button class="main-nav__toggle main-nav__toggle--opened" type="button">
           <span></span>
         </button>
@@ -144,9 +144,9 @@
           </li>
         </ul>
         <div class="features__images">
-          <div class="features__image-1"></div>
-          <div class="features__image-2"></div>
-          <div class="features__image-3"></div>
+          <div class="features__image features__image--mood"></div>
+          <div class="features__image features__image--world"></div>
+          <div class="features__image features__image--friends"></div>
         </div>
       </section>
     </div>
@@ -161,7 +161,7 @@
           <p class="effect__description">
             Британские ученые провели исследования<br class="effect__enter-tablet">
             и доказали,<br class="effect__enter-desktop">
-            что положительные эффект<br class="effect__enter-tablet">
+            что положительный эффект<br class="effect__enter-tablet">
             от использования приложения длится<br class="effect__enter-tablet">
             целые сутки!
           </p>
@@ -300,7 +300,7 @@
             </div>
           </div>
         </div>
-        <div class="rate__slider slider">
+        <div class="rate__slider slider slider--rate">
           <input class="slider__radio" type="radio" id="rate__one" name="toggle">
           <label class="slider__label" for="rate__one"></label>
           <input class="slider__radio" type="radio" id="rate__two" name="toggle" checked>
@@ -317,15 +317,15 @@
         <div class="address container-fixed">
           <p class="address__title">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="address__list list-none">
-            <li class="address__item address__item--1">
+            <li class="address__item address__item--phone">
               <p class="address__text">Звоните:</p>
               <span class="address__description">+7 (812) 555-66-66</span>
             </li>
-            <li class="address__item address__item--3">
+            <li class="address__item address__item--mail">
               <p class="address__text">Пишите:</p>
               <span class="address__description address__description--mail">mail@htmlacademy.ru</span>
             </li>
-            <li class="address__item address__item--2">
+            <li class="address__item address__item--address">
               <p class="address__text">Приезжайте в гости:</p>
               <span class="address__description">ул. Большая Конюшенная, 19/8</span>
             </li>
@@ -338,7 +338,7 @@
     </section>
   </main>
 
-  <footer class="page-footer container-fixed">
+  <footer class="page-footer page-footer--index container-fixed">
     <a class="page-footer__logo" href="./index.html">
       <div class="logo logo--footer">
         <svg class="logo__adaptive logo__adaptive--mobile" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -415,10 +415,10 @@
     </section>
 
     <section class="page-footer__copyright copyright">
-      <h2 class="copyright__title visually-hidden">Логотип Академии</h2>
+      <h2 class="visually-hidden">Логотип Академии</h2>
       <p class="copyright__title">Разработано</p>
       <a href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__image" width="37.6px" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+        <svg class="copyright__image" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
           <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
         </svg>
       </a>

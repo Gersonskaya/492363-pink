@@ -1,5 +1,5 @@
 .filters {
-  padding-bottom: 30px;
+  padding-bottom: 42px;
   background-color: $light-gray;
 }
 
@@ -10,16 +10,17 @@
 .filters__list {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-bottom: 60px;
+  padding-left: 54px;
+  padding-right: 66px;
+  padding-bottom: 75px;
   margin-bottom: 38px;
   border-bottom: 1px solid $super-light-blue;
 }
 
 .filters__item {
   position: relative;
-  padding: 0 15px;
 }
 
 .filters__radio {
@@ -52,7 +53,7 @@
   position: absolute;
   z-index: 0;
   top: 0;
-  left: 15px;
+  left: 0;
   fill: $dark-gray;
   cursor: pointer;
 }
@@ -63,21 +64,6 @@
   width: 240px;
   height: 2px;
   background-color: $dark-blue;
-
-  &--crop {
-    top: 75px;
-    left: -15%;
-  }
-
-  &--fill {
-    top: 74px;
-    left: -87px;
-  }
-
-  &--contrast {
-    top: 68px;
-    left: -165px;
-  }
 
   &::before {
     position: absolute;
@@ -94,19 +80,34 @@
     background-color: $pink;
   }
 
-  &--crop::before {
-    top: -6px;
-    left: 190px;
+  &--crop {
+    top: 85px;
+    left: -15px;
+
+    &::before {
+      top: -6px;
+      left: 192px;
+    }
   }
 
-  &--fill::before {
-    top: -6px;
-    left: 30px;
+  &--fill {
+    top: 83px;
+    left: -98px;
+
+    &::before {
+      top: -6px;
+      left: 30px;
+    }
   }
 
-  &--contrast::before {
-    top: -6px;
-    left: 120px;
+  &--contrast {
+    top: 78px;
+    left: -184px;
+
+    &::before {
+      top: -6px;
+      left: 120px;
+    }
   }
 }
 
@@ -118,13 +119,14 @@
   .filters {
     display: flex;
     justify-content: space-between;
-    padding: 35px 20px;
+    padding: 40px 20px;
+    padding-bottom: 30px;
   }
 
   .filters__your-picture {
     min-width: 300px;
     min-height: 400px;
-    margin: 20px 0;
+    margin: 15px 0;
     transform: none;
   }
 
@@ -140,12 +142,8 @@
     justify-content: space-between;
     align-items: center;
     min-width: 275px;
-    min-height: 70px;
+    min-height: 72px;
     border-bottom: 1px solid $super-light-blue;
-  }
-
-  .filters__radio--contrast {
-    transform: translate(5px, 0);
   }
 
   .filters__radio:hover + .filters-form__radio + .filters__checked-block > .filters__svg {
@@ -167,44 +165,44 @@
     &--crop {
       width: 22px;
       height: 22px;
+      transform: translate(9px, 2px);
     }
 
     &--fill {
       width: 24px;
       height: 22px;
+      transform: translate(9px, 5px);
     }
 
     &--contrast {
       width: 16px;
       height: 16px;
+      transform: translate(14px, 4px);
     }
   }
 
   .filters__range {
     position: static;
-    width: 202px;
     display: block;
+    width: 202px;
+    transform: translateX(-12px);
 
     &--crop::before {
-      left: 200px;
+      left: 146px;
     }
 
     &--fill::before {
-      left: 80px;
+      left: 25px;
     }
 
     &--contrast::before {
-      left: 150px;
-    }
-
-    &::before {
-      top: 27px;
+      left: 96px;
     }
   }
 
   .filters__buttons-block {
     margin-top: auto;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 
   .filters__button {
@@ -216,7 +214,10 @@
 
 @media (min-width: $desktop-width) {
   .filters {
-    padding: 44px 80px;
+    max-width: 940px;
+    padding: 41px 80px;
+    padding-right: 60px;
+    padding-bottom: 30px;
   }
 
   .filters__your-picture {
@@ -225,7 +226,7 @@
 
   .filters__item {
     width: 100%;
-    padding: 17px 30px;
+    padding: 5px 18px;
     padding-left: 0;
   }
 
@@ -235,14 +236,17 @@
 
   .filters__radio,
   .filters__svg {
+    transform: none;
+
     &--crop {
-      width: 44px;
-      height: 44px;
+      width: 47px;
+      height: 46px;
     }
 
     &--fill {
       width: 48px;
-      height: 43px;
+      height: 46px;
+      transform: none;
     }
 
     &--contrast {
@@ -255,18 +259,15 @@
     width: 288px;
 
     &--crop::before {
-      top: 31px;
-      left: 163px;
+      left: 71px;
     }
 
     &--fill::before {
-      top: 32px;
-      left: 339px;
+      left: 247px;
     }
 
     &--contrast::before {
-      top: 28px;
-      left: 252px;
+      left: 160px;
     }
   }
 
@@ -278,5 +279,6 @@
   .filters__buttons-block {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 29px;
   }
 }

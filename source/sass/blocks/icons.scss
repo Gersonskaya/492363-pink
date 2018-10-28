@@ -1,25 +1,27 @@
 .icons {
   max-width: 240px;
-  padding: 32px 0;
+  padding: 33px 0;
+  padding-bottom: 30px;
   margin: 0 auto;
-}
-
-.icons__description {
-  margin: 0;
-  line-height: 24px;
-  font-weight: 100;
-  text-align: center;
-  color: $white;
 }
 
 .icons__list {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 17px;
 }
 
 .icons__item {
   align-self: baseline;
+}
+
+.icons__description {
+  margin-top: 12px;
+  margin-bottom: 0;
+  line-height: 24px;
+  font-weight: 100;
+  text-align: center;
+  color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,14 +32,15 @@
   }
 
   .icons__list {
-    padding: 51px;
-    padding-top: 42px;
-    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-top: 45px;
+    padding-bottom: 29px;
+    padding-left: 47px;
   }
 
   .icons__description {
-    font-size: 18px;
-    padding-bottom: 10px;
+    font-size: 17.5px;
+    margin: 0;
   }
 }
 
@@ -47,11 +50,7 @@
   }
 
   .icons__list {
-    padding: 60px 45px;
-    padding-bottom: 50px;
-  }
-
-  .icons__description {
-    font-size: 18px;
+    padding: 68px 45px;
+    padding-bottom: 44px;
   }
 }

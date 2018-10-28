@@ -1,5 +1,5 @@
 .contacts__text {
-  padding-left: 20px;
+  padding-left: 22px;
   text-transform: uppercase;
   color: $pink;
 }
@@ -9,14 +9,14 @@
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 25px;
+    margin-top: 27px;
 
     &::before {
       position: absolute;
       top: 2px;
       right: 2px;
-      width: 62px;
-      height: 63px;
+      width: 60px;
+      height: 60px;
       content: "";
       background: $double-gray;
     }
@@ -43,7 +43,7 @@
   }
 
   .contacts__text {
-    padding-left: 15px;
+    padding-left: 19px;
     padding-top: 10px;
   }
 }

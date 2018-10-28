@@ -2,12 +2,17 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  padding: 0;
   background: transparent;
   border: none;
   cursor: pointer;
 
   &:focus {
     outline: none;
+  }
+
+  &--opened {
+    right: 16px;
   }
 }
 
@@ -76,7 +81,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: 42px;
+    top: 45px;
   }
 }
 

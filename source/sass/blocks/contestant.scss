@@ -2,8 +2,8 @@
   border: none;
 
   &--names {
-    padding: 42px 20px;
-    padding-bottom: 22px;
+    padding: 32px 20px;
+    padding-bottom: 25px;
   }
 
   &--radio,
@@ -12,12 +12,12 @@
   }
 
   &--contacts {
-    padding: 23px 20px;
-    padding-top: 34px;
+    padding: 25px 20px;
+    padding-top: 30px;
   }
 
   &--comments {
-    padding: 40px 20px;
+    padding: 38px 20px;
   }
 
   &--send {
@@ -26,12 +26,12 @@
 }
 
 .contestant__app {
-  padding: 36px 20px;
-  padding-bottom: 5px;
+  padding: 38px 20px;
+  padding-bottom: 8px;
 }
 
 .contestant__progress {
-  padding: 43px 20px;
+  padding: 38px 20px;
   padding-bottom: 0;
 }
 
@@ -54,7 +54,7 @@
     padding-bottom: 36px;
   }
 
-  &--comment {
+  &--comments {
     padding-bottom: 17px;
   }
 }
@@ -68,11 +68,11 @@
 .contestant__checkboxes-block {
   position: relative;
   display: flex;
-  padding-bottom: 43px;
+  padding-bottom: 44px;
 }
 
 .contestant__label-text {
-  padding-left: 20px;
+  padding-left: 22px;
   text-transform: uppercase;
   color: $pink;
 }
@@ -188,12 +188,15 @@
       display: flex;
       flex-direction: column;
       order: 3;
-      padding: 20px 60px;
+      padding: 20px 58px;
+      padding-bottom: 27px;
     }
 
     &--comments {
       order: 5;
-      padding: 45px 60px;
+      padding: 45px 58px;
+      padding-bottom: 40px;
+      margin-bottom: 68px;
     }
 
     &--send {
@@ -202,19 +205,20 @@
       align-items: baseline;
       order: 6;
       padding: 0;
+      margin-bottom: 52px;
       border: none;
     }
   }
 
   .contestant__app {
-    padding: 52px 60px;
-    padding-bottom: 18px;
+    padding: 52px 58px;
+    padding-bottom: 20px;
     border: 2px solid $double-gray;
     border-radius: 3px;
   }
 
   .contestant__progress {
-    padding: 52px 60px;
+    padding: 52px 58px;
     padding-bottom: 5px;
     border: 2px solid $double-gray;
     border-radius: 3px;
@@ -222,12 +226,12 @@
 
   .contestant__title {
     position: absolute;
-    top: -10px;
+    top: -9px;
     display: block;
     background-color: $white;
 
     &--contacts {
-      left: 180px;
+      left: 177px;
       padding: 0 32px;
     }
 
@@ -237,14 +241,18 @@
     }
 
     &--app {
-      left: 125px;
+      left: 126px;
       padding: 0 24px;
     }
 
     &--comments {
-      left: 180px;
+      left: 179px;
       padding: 0 37px;
     }
+  }
+
+  .contestant__label {
+    margin-left: 59px;
   }
 
   .contestant__label-name {
@@ -255,7 +263,7 @@
 
   .contestant__label-text {
     padding: 0;
-    margin-right: 15px;
+    margin-right: 19px;
   }
 }
 
@@ -267,18 +275,20 @@
     }
 
     &--names {
-      justify-content: space-between;
+      margin-left: 0;
+      margin-top: 7px;
     }
 
     &--contacts {
       flex-direction: row;
       justify-content: space-between;
-      padding: 42px 25px;
+      padding: 42px 23px;
       padding-bottom: 10px;
     }
 
     &--comments {
-      padding: 43px 60px;
+      padding: 42px 60px;
+      padding-bottom: 32px;
     }
 
     &--send {
@@ -288,7 +298,7 @@
 
   .contestant__app {
     padding: 55px 74px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
   }
 
   .contestant__progress {
@@ -296,13 +306,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 15px;
-    padding-right: 10px;
+    padding-right: 8px;
   }
 
   .contestant__title {
     &--contacts,
     &--comments {
-      left: 340px;
+      left: 338px;
     }
 
     &--progress {

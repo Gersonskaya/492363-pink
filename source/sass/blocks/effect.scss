@@ -8,6 +8,7 @@
     justify-content: space-between;
     padding: 20px;
     padding-top: 60px;
+    padding-right: 35px;
     background-color: $white;
     background-size: contain;
   }
@@ -21,22 +22,22 @@
 
     &::before {
       position: absolute;
-      top: 60px;
-      left: 20px;
+      top: 55px;
+      left: 18px;
       display: block;
       content: "";
-      width: 200px;
-      height: 200px;
+      width: 204px;
+      height: 204px;
       border: 15px solid $pink;
       border-radius: 50%;
     }
 
     &::after {
       position: absolute;
-      top: 140px;
-      left: 63px;
+      top: 138px;
+      left: 67px;
       content: "24";
-      font-size: 96px;
+      font-size: 91px;
       font-weight: 600;
       text-align: center;
       color: $pink;
@@ -46,7 +47,7 @@
   .effect__block {
     align-self: center;
     max-width: 310px;
-    padding-left: 10px;
+    padding-top: 11px;
   }
 
   .effect__title {
@@ -58,7 +59,9 @@
 
   .effect__description {
     margin: 0;
-    padding: 10px 0;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    line-height: 24px;
   }
 
   .effect__enter-desktop {
@@ -73,18 +76,23 @@
 @media (min-width: $desktop-width) {
   .effect {
     justify-content: flex-start;
-    padding: 70px 10px;
+    padding: 40px 10px;
+    padding-bottom: 68px;
     font-size: 18px;
     background-color: $light-gray;
   }
 
   .effect__block {
     max-width: 600px;
-    padding-left: 65px;
+    padding-top: 40px;
+    padding-left: 68px;
   }
 
   .effect__description {
+    padding-top: 22px;
+    padding-bottom: 33px;
     font-size: 18px;
+    line-height: 30px;
   }
 
   .effect__enter-tablet {
@@ -96,7 +104,7 @@
   }
 
   .effect__title {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .effect__image {
