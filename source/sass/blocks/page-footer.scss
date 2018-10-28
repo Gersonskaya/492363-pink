@@ -14,7 +14,8 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 7px 20px;
+    padding: 0 20px;
+    padding-right: 18px;
 
     &--index {
       display: flex;
@@ -24,6 +25,12 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 44px 10px;
+    padding: 41px 10px;
+
+    &--photo {
+      padding: 68px 10px;
+      padding-right: 7px;
+      padding-bottom: 43px;
+    }
   }
 }

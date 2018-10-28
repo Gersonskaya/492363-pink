@@ -1,6 +1,6 @@
 .downloads__image {
   width: 320px;
-  height: 393px;
+  height: 395px;
   background: url("./../../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -24,7 +24,7 @@
   .downloads {
     max-width: 660px;
     padding: 92px 20px;
-    padding-bottom: 76px;
+    padding-bottom: 108px;
     margin: 0 auto;
     background: url("./../../img/iphone-hand-tablet@1x.png") no-repeat -20px 74px;
 
@@ -50,9 +50,9 @@
     display: block;
     margin: 0;
     padding: 0 50px;
-    padding-bottom: 25px;
+    padding-bottom: 31px;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
     font-weight: 100;
     text-align: center;
     color: $white;
@@ -63,6 +63,7 @@
   .downloads {
     max-width: 960px;
     padding: 86px 10px;
+    padding-bottom: 123px;
     background: url("./../../img/iphone-hand-desktop@1x.png") no-repeat 25px 98px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -73,13 +74,9 @@
     }
   }
 
-  .downloads__background {
-    padding-top: 28px;
-  }
-
   .downloads__text {
-    padding: 0 30px;
-    padding-bottom: 50px;
+    padding: 21px 30px;
+    padding-bottom: 53px;
     font-size: 50px;
     line-height: 60px;
   }

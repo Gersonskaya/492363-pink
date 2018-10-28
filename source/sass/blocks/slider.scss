@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
+
+  &--rate {
+    padding-bottom: 49px;
+  }
 }
 
 .slider__radio {
@@ -12,7 +16,7 @@
   position: relative;
   width: 6px;
   height: 6px;
-  margin: 0 5px;
+  margin: 0 10px;
   border-radius: 50%;
   background-color: $super-dark-gray;
   cursor: pointer;
