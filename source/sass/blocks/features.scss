@@ -37,12 +37,12 @@
   z-index: 1;
 }
 
-.features__image-1,
-.features__image-2 {
+.features__image--mood,
+.features__image--world {
   display: none;
 }
 
-.features__image-3 {
+.features__image--friends {
   width: 157px;
   height: 320px;
   background: url("./../../img/iphone-screen-mobile@1x.png") no-repeat 0 0;

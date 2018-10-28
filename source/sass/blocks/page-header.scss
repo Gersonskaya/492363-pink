@@ -1,12 +1,16 @@
 .page-header {
   position: relative;
-  background-color: $dark-blue;
+  background-color: $header-black;
+
+  &--opened {
+    background-color: $dark-blue;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     padding: 0 10px;
-    background-color: rgba(0, 0, 0, 0.32);
+    background-color: $header-black;
   }
 
   .page-header__navigation {

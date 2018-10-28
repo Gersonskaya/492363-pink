@@ -10,8 +10,11 @@
 .form__input,
 .form__textarea {
   width: 100%;
-  padding: 14.5px 20px;
-  line-height: 30px;
+  padding: 16px 20px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: $dark-blue;
   border: 2px solid $double-gray;
   border-radius: 3px;
 
@@ -28,6 +31,7 @@
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 18px;
     color: $dark-blue;
+    opacity: 1;
   }
 }
 

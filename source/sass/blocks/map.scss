@@ -1,7 +1,4 @@
 .map {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 613px;
   background: url("./../../img/bg-map-mobile@1x.png") repeat-x center bottom;
 
@@ -20,8 +17,13 @@
 }
 
 .map__marker {
-  padding-bottom: 10px;
+  max-width: 320px;
+  min-height: 165px;
   margin: auto;
+}
+
+.map__marker-image {
+  transform: translate(144px, 50px);
 }
 
 @media (min-width: $tablet-width) {
@@ -42,7 +44,11 @@
   }
 
   .map__marker {
-    padding-bottom: 10px;
+    min-height: 305px;
+  }
+
+  .map__marker-image {
+    transform: translate(144px, 130px);
   }
 }
 
@@ -64,6 +70,10 @@
   }
 
   .map__marker {
-    padding-bottom: 35px;
+    min-height: 400px;
+  }
+
+  .map__marker-image {
+    transform: translate(144px, 165px);
   }
 }

@@ -48,13 +48,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .user {
+    width: 100%;
+  }
+
   .user__photo {
-    width: 300px;
-    height: auto;
+    min-width: 300px;
+    min-height: 300px;
 
     &--winner {
-      width: calc(100% + 80px);
-      margin: 0 -40px;
+      min-width: calc(100% + 40px);
+      height: inherit;
+      margin: 0 -20px;
     }
   }
 
@@ -91,6 +96,10 @@
     padding: 0;
   }
 
+  .user__comment {
+    min-height: 48px;
+  }
+
   .user__likes {
     display: flex;
     flex-direction: row-reverse;
@@ -106,9 +115,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .user__photo--winner {
-    width: calc(100% + 260px);
-    height: 506px;
-    margin: 0 -130px;
+  .user__photo {
+    min-height: 400px;
+
+    &--winner {
+      min-width: calc(100% + 20px);
+      height: inherit;
+      margin: 0 -10px;
+    }
   }
 }
