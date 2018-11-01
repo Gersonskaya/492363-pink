@@ -215,9 +215,10 @@
 @media (min-width: $desktop-width) {
   .filters {
     max-width: 940px;
-    padding: 41px 80px;
+    padding-top: 37px;
     padding-right: 60px;
     padding-bottom: 30px;
+    padding-left: 80px;
   }
 
   .filters__your-picture {
@@ -226,7 +227,7 @@
 
   .filters__item {
     width: 100%;
-    padding: 12px 18px;
+    padding: 14px 18px;
     padding-left: 0;
 
     &:last-child {
@@ -280,11 +281,12 @@
   .filters__button {
     max-width: 185px;
     margin: 0;
+    font-size: 18px;
   }
 
   .filters__buttons-block {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 29px;
+    padding-bottom: 27px;
   }
 }

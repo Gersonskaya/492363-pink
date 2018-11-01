@@ -10,13 +10,14 @@
 .form__input,
 .form__textarea {
   width: 100%;
-  padding: 16px 20px;
-  font-family: "OpenSans", "Arial", sans-serif;
+  padding: 17px 20px;
+  font-family: "OpenSans","Arial",sans-serif;
   font-size: 18px;
   line-height: 25px;
   color: $dark-blue;
   border: 2px solid $double-gray;
   border-radius: 3px;
+  cursor: pointer;
 
   &:hover {
     border-color: $dark-blue;
@@ -25,6 +26,10 @@
   &:focus {
     border-color: $pink;
     outline: none;
+  }
+
+  :required {
+    border-color: $pink;
   }
 
   &::placeholder {
@@ -56,14 +61,14 @@
   margin-top: 35px;
   text-align: center;
   text-transform: uppercase;
+}
 
-  &--color {
-    color: $pink;
-  }
+.form__required-color {
+  color: $pink;
+}
 
-  &--extra {
-    display: none;
-  }
+.form__required-extra {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,7 +107,7 @@
     max-height: 127px;
   }
 
-  .form__required--extra {
+  .form__required-extra {
     display: inline;
   }
 }

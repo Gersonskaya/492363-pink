@@ -3,13 +3,29 @@
 }
 
 .user__photo--winner {
+  display: block;
+  width: 320px;
+  height: 137px;
   margin-left: -20px;
+  background-image: url("./../../img/panorama-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("./../../img/panorama-mobile@2x.jpg");
+    background-size: 320px 137px;
+    background-repeat: no-repeat;
+  }
 }
 
 .user__info {
   padding: 18px;
   padding-top: 7px;
   line-height: 24px;
+
+  &--winner {
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
 }
 
 .user__name {
@@ -44,22 +60,26 @@
   width: 13px;
   height: 12px;
   margin-right: 18px;
-  background: url("./../img/icon-heart.svg");
+  background: url("./../../img/icon-heart.svg");
 }
 
 @media (min-width: $tablet-width) {
-  .user {
-    width: 100%;
-  }
-
   .user__photo {
     min-width: 300px;
     min-height: 300px;
 
     &--winner {
-      min-width: calc(100% + 40px);
-      height: inherit;
-      margin: 0 -20px;
+      width: 700px;
+      height: 509px;
+      margin-left: -40px;
+      background-image: url("./../../img/panorama-tablet@1x.jpg");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("./../../img/panorama-tablet@2x.jpg");
+        background-size: 700px 509px;
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -67,6 +87,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    max-width: 300px;
     min-height: 145px;
     padding: 27px;
     padding-bottom: 21px;
@@ -77,8 +98,9 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: baseline;
+      max-width: 100%;
       min-height: auto;
-      padding-bottom: 26px;
+      padding: 24px 27px;
     }
   }
 
@@ -119,9 +141,22 @@
     min-height: 400px;
 
     &--winner {
-      min-width: calc(100% + 20px);
-      height: inherit;
-      margin: 0 -10px;
+      width: 1200px;
+      height: 506px;
+      margin: 0 -130px;
+      background-image: url("./../../img/panorama-desktop@1x.jpg");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("./../../img/panorama-desktop@2x.jpg");
+        background-size: 1200px 506px;
+        background-repeat: no-repeat;
+      }
     }
+  }
+
+  .user__info--winner {
+    padding-top: 22px;
+    padding-bottom: 0;
   }
 }

@@ -11,7 +11,7 @@
 .rate__carousel {
   position: absolute;
   top: 91px;
-  left: -257px;
+  left: -256px;
 }
 
 .rate__slider {
@@ -23,11 +23,18 @@
 @media (min-width: $tablet-width) {
   .rate {
     min-height: auto;
-    padding: 152px 10px;
-    padding-bottom: 95px;
+    padding-top: 87px;
+    padding-bottom: 70px;
   }
 
   .rate__slider {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rate {
+    padding-top: 151px;
+    padding-bottom: 95px;
   }
 }

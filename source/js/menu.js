@@ -14,3 +14,5 @@ button.addEventListener("click", function() {
   menu.classList.toggle(menuClass);
   header.classList.toggle(headerClass);
 });
+
+document.body.classList.remove('body--no-javascript');

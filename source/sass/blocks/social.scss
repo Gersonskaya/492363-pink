@@ -46,18 +46,13 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    margin-right: 0;
-    margin-left: 15px;
-
-    &--form {
-      margin-right: 15px;
-      margin-left: 0;
-    }
+    margin-right: 15px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .social--form {
+  .social {
     margin-right: 0;
     margin-left: 15px;
   }

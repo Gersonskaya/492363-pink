@@ -1,5 +1,11 @@
 .photo {
   background-color: $white;
+  overflow-x: hidden;
+}
+
+.photo__list {
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .photo__item {
@@ -30,8 +36,9 @@
 @media (min-width: $tablet-width) {
   .photo__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    max-width: 660px;
     padding: 0 10px;
   }
 
@@ -59,11 +66,12 @@
 
 @media (min-width: $desktop-width) {
   .photo__list {
+    max-width: 960px;
     padding: 0;
   }
 
   .photo__item {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 
     &--best {
       min-width: 940px;

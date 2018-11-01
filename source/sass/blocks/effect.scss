@@ -35,9 +35,9 @@
     &::after {
       position: absolute;
       top: 138px;
-      left: 67px;
+      left: 64px;
       content: "24";
-      font-size: 91px;
+      font-size: 96px;
       font-weight: 600;
       text-align: center;
       color: $pink;
@@ -47,7 +47,7 @@
   .effect__block {
     align-self: center;
     max-width: 310px;
-    padding-top: 11px;
+    padding-top: 15px;
   }
 
   .effect__title {
@@ -59,7 +59,7 @@
 
   .effect__description {
     margin: 0;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-bottom: 8px;
     line-height: 24px;
   }
@@ -89,8 +89,8 @@
   }
 
   .effect__description {
-    padding-top: 22px;
-    padding-bottom: 33px;
+    padding-top: 23px;
+    padding-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -104,7 +104,7 @@
   }
 
   .effect__title {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .effect__image {

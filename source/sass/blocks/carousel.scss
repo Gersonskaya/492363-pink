@@ -1,27 +1,16 @@
 .carousel {
   position: absolute;
-  top: 91px;
   display: flex;
   flex-wrap: nowrap;
 }
 
 .carousel__base {
   .carousel__header {
-    border-radius: 5px 0 0 5px;
+    border-radius: 3px 0 0 3px;
   }
 
   .carousel__service {
     border-left: 2px solid $double-gray;
-  }
-}
-
-.carousel__unlimited {
-  .carousel__header {
-    border-radius: 0 5px 5px 0;
-  }
-
-  .carousel__service {
-    border-right: 2px solid $double-gray;
   }
 }
 
@@ -30,21 +19,53 @@
   border-right: 2px solid $double-gray;
 }
 
+.carousel__unlimited {
+  .carousel__header {
+    border-radius: 0 3px 3px 0;
+  }
+
+  .carousel__service {
+    border-right: 2px solid $double-gray;
+  }
+}
+
 .carousel__header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-width: 278px;
+  min-width: 276px;
   padding: 19px 0;
   text-align: center;
   text-transform: uppercase;
   color: $white;
   background-color: $dark-blue;
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -2px;
+      content: "";
+      width: 73px;
+      height: 73px;
+      background: url("./../../img/bg-hit.svg");
+    }
+
+    &::after {
+      position: absolute;
+      top: 11px;
+      left: 11px;
+      content: "хит";
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .carousel__subtitle {
   margin: 0;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -58,7 +79,7 @@
   display: flex;
   min-height: 52px;
   padding: 14.5px 22px;
-  padding-right: 17px;
+  padding-right: 15px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
@@ -73,36 +94,19 @@
 .carousel__yes {
   width: 30px;
   height: 30px;
-  background: url("./../img/icon-yes.svg") no-repeat 0 5px;
+  background-image: url("./../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
   background-size: contain;
 }
 
 .carousel__no {
   width: 30px;
   height: 27px;
-  background: url("./../img/icon-no.svg") no-repeat 0 0;
+  background-image: url("./../../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-size: contain;
-}
-
-.carousel__header--hit {
-  position: relative;
-}
-
-.carousel__header--hit::before {
-  position: absolute;
-  top: 0;
-  content: "";
-  width: 73px;
-  height: 73px;
-  background: url("./../img/bg-hit.svg");
-}
-
-.carousel__header--hit::after {
-  position: absolute;
-  top: 11px;
-  left: 11px;
-  content: "хит";
-  transform: rotate(-45deg);
 }
 
 @media (min-width: $tablet-width) {
@@ -113,7 +117,20 @@
 
   .carousel__header {
     min-width: 153px;
-    padding: 9px 0;
+    padding-top: 12px;
+    padding-bottom: 7px;
+
+    &--hit::before {
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background: url("./../../img/bg-hit-tablet.svg");
+    }
+
+    &--hit::after {
+      top: 5px;
+      left: 5px;
+    }
   }
 
   .carousel__subtitle {
@@ -133,17 +150,6 @@
     min-height: 47px;
     padding: 7px 0;
   }
-
-  .carousel__header--hit::before {
-    width: 60px;
-    height: 60px;
-    background: url("./../img/bg-hit-tablet.svg");
-  }
-
-  .carousel__header--hit::after {
-    top: 5px;
-    left: 5px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -154,7 +160,7 @@
     &--hit::before {
       width: 73px;
       height: 73px;
-      background: url("./../img/bg-hit.svg");
+      background: url("./../../img/bg-hit.svg");
     }
 
     &--hit::after {

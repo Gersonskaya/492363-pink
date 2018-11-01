@@ -4,12 +4,13 @@
   padding: 15px 0;
   margin: 0 auto;
   font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 19.5px;
+  font-size: 18px;
   line-height: 18px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .button--downloads {
@@ -62,7 +63,7 @@
 .button--error,
 .button--thanks {
   padding: 16.5px 0;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: $white;
@@ -99,6 +100,6 @@
 
 @media (min-width: $desktop-width) {
   .button--downloads {
-    font-size: 23px;
+    font-size: 21px;
   }
 }

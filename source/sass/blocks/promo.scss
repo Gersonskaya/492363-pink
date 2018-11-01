@@ -13,23 +13,22 @@
   text-align: center;
 }
 
-.promo__item--enter {
+.promo__enter {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding: 50px 20px;
-    padding-bottom: 46px;
+    padding: 46px 20px;
   }
 
   .promo__item {
     padding: 0;
-    font-size: 39px;
+    font-size: 40px;
     line-height: 48px;
   }
 
-  .promo__item--enter {
+  .promo__enter {
     display: inline;
   }
 }
@@ -41,7 +40,7 @@
   }
 
   .promo__item {
-    font-size: 48px;
+    font-size: 50px;
     line-height: 60px;
   }
 }
